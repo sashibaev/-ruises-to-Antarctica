@@ -1,15 +1,16 @@
 body {
-  max-width: 1024px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0;
   border: none;
+  box-sizing: border-box;
 
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
   font-family: $font-family;
-  // color: $text-color;
+  color: $text-main-color;
 
   background-color: $background-light-color;
   /* временно для верстки */
@@ -30,4 +31,16 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    min-width: 320px;
+  }
 }
