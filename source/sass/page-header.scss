@@ -3,10 +3,10 @@
   justify-content: space-between;
   align-items: center;
 
-  max-width: 100%;
+  width: 100%;
   min-height: 108px;
-  margin: 0 auto;
-  padding: 0 103px;
+  margin: 0;
+  padding: 0 7.6%;
   box-sizing: border-box;
 
   background-color: $background-nav-color;
@@ -45,6 +45,8 @@
 }
 
 .page-header__nav li {
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 33px;
 
   font-weight: 500;
@@ -65,10 +67,8 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    width: 100%;
     min-height: 80px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding: 0 45px;
   }
 
   .page-header__logo svg {
@@ -89,8 +89,7 @@
     display: block;
 
     min-height: 0;
-    padding-right: 4.7%;
-    padding-left: 4.7%;
+    padding: 0 4.7%;
 
     background-color: $background-light-color;
   }
