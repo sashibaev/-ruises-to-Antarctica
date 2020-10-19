@@ -179,6 +179,7 @@
   }
 
   .home-page__text h2 {
+    width: 70%;
     margin: 0;
     margin-bottom: 15px;
 
@@ -191,13 +192,13 @@
   }
 
   .home-page__title {
-    height: 412px;
+    height: 438px;
     margin-bottom: 57px;
-    padding-top: 88px;
+    padding-top: 114px;
     padding-left: 15px;
 
     background-image: url("../img/Rectangle-1-mobile.png");
-    background-position: 0 -88px;
+    background-position: 0 -62px;
     background-size: 100% 500px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -215,7 +216,7 @@
   }
 
   .home-page__title p {
-    width: 200px;
+    width: 70%;
     font-size: 16px;
     line-height: 22px;
   }

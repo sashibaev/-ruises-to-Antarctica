@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   padding-top: 87px;
+  box-sizing: border-box;
 
   background-color: $background-light-color;
   background-image: url("../img/Rectangle-3-desktop.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 1366px 562px;
+  background-size: 100% 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/Rectangle-3-desktop@2x.png");
@@ -128,11 +129,11 @@
     padding-top: 68px;
 
     background-image: url("../img/Rectangle-3-tablet.png");
-    background-size: 768px 588px;
+    background-size: 100% 588px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/Rectangle-3-tablet@2x.png");
-      background-size: 768px 588px;
+      background-size: 100% 588px;
     }
   }
 
@@ -229,11 +230,11 @@
     padding-top: 37px;
 
     background-image: url("../img/Rectangle-3-mobile.png");
-    background-size: 320px 997px;
+    background-size: 100% 997px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/Rectangle-3-mobile@2x.png");
-      background-size: 320px 997px;
+      background-size: 100% 997px;
     }
   }
 
@@ -245,25 +246,39 @@
   }
 
   .advantages li {
-    width: 290px;
+    //width: 290px;
+    width: 100%;
     min-height: 249px;
-    margin-right: auto;
+    margin: 0;
+    //margin-right: auto;
     margin-bottom: 30px;
-    margin-left: auto;
+    //margin-left: auto;
     padding-top: 72px;
     padding-left: 20px;
   }
 
+  .advantages__liner h3 {
+    width: 64%;
+  }
+
   .advantages__liner p {
-    width: 255px;
+    width: 94%;
+  }
+
+  .advantages__system h3 {
+    width: 60%;
   }
 
   .advantages__system p {
-    width: 223px;
+    width: 90%;
+  }
+
+  .advantages__tours h3 {
+    min-width: 62%;
   }
 
   .advantages__tours p {
-    width: 233px;
+    min-width: 92%;
   }
 
   .advantages ul {
@@ -271,6 +286,6 @@
 
     min-width: 320px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 15px;
   }
 }
