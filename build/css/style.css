@@ -55,16 +55,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-.background {
-  background-color: #3373b0;
-  background-image: url("../img/Rectangle-1-desktop.png");
-  background-repeat: no-repeat;
-  background-size: 1366px 650px; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .background {
-      background-image: url("../img/Rectangle-1-desktop@2x.png");
-      background-size: 1366px 650px; } }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,25 +67,11 @@ img {
 
 @media (max-width: 1023px) {
   body {
-    min-width: 768px; }
-  .background {
-    background-image: url("../img/Rectangle-1-tablet.png");
-    background-size: 100% 638px; } }
-  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-    .background {
-      background-image: url("../img/Rectangle-1-tablet@2x.png");
-      background-size: 100% 638px; } }
+    min-width: 768px; } }
 
 @media (max-width: 767px) {
   body {
-    min-width: 320px; }
-  .background {
-    background-image: url("../img/Rectangle-1-mobile.png");
-    background-size: 100% 500px; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .background {
-      background-image: url("../img/Rectangle-1-mobile@2x.png");
-      background-size: 100% 500px; } }
+    min-width: 320px; } }
 
 /* Шапка сайта */
 .page-header {
@@ -113,7 +89,15 @@ img {
   margin: 0;
   padding: 0 7.6%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  background-color: #3373b0;
+  background-image: url("../img/Rectangle-1-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 650px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/Rectangle-1-desktop@2x.png");
+      background-size: 1366px 650px; } }
 
 .page-header__logo:hover,
 .page-header__logo :focus {
@@ -161,7 +145,15 @@ img {
 @media (max-width: 1023px) {
   .page-header {
     min-height: 80px;
-    padding: 0 45px; }
+    padding: 0 45px;
+    background-image: url("../img/Rectangle-1-tablet.png");
+    background-size: 100% 638px; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/Rectangle-1-tablet@2x.png");
+      background-size: 100% 638px; } }
+
+@media (max-width: 1023px) {
   .page-header__logo svg {
     width: 38px;
     height: 20px; }
@@ -175,9 +167,18 @@ img {
     display: block;
     min-height: 0;
     padding: 0 4.7%;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    background-image: none; }
   .page-header__close {
-    background-color: #3373b0; }
+    background-color: #3373b0;
+    background-image: url("../img/Rectangle-1-mobile.png");
+    background-size: 100% 500px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .page-header__close {
+      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-size: 100% 500px; } }
+
+@media (max-width: 767px) {
   .page-header__path {
     fill: #011c40; }
   .page-header__logo-close {
@@ -223,7 +224,7 @@ img {
   .page-header__toggle-open {
     width: 24px;
     height: 12px;
-    background-color: #3373b0;
+    background-color: #002e65;
     background-image: url("../img/icon-open.svg");
     background-size: 24px 12px; }
   .page-header__wrapper {
@@ -283,7 +284,15 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #f9fbfd;
-  background-position: 0 -108px; }
+  background-color: #3373b0;
+  background-image: url("../img/Rectangle-1-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 0 -108px;
+  background-size: 1366px 650px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .home-page__title {
+      background-image: url("../img/Rectangle-1-desktop@2x.png");
+      background-size: 1366px 650px; } }
 
 .home-page__title h1 {
   margin: 0;
@@ -312,6 +321,8 @@ img {
           box-sizing: border-box; }
 
 @media (max-width: 1023px) {
+  .home-page {
+    width: 100%; }
   .home-page__image {
     padding-top: 9px; }
   .home-page__image img {
@@ -331,11 +342,22 @@ img {
   .home-page__text p {
     min-width: 324px; }
   .home-page__title {
+    max-width: 100%;
     height: 558px;
     margin-bottom: 91px;
     padding-top: 188px;
     padding-left: 5.8%;
-    background-position: 0 -80px; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: url("../img/Rectangle-1-tablet.png");
+    background-position: 0 -80px;
+    background-size: 100% 638px; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .home-page__title {
+      background-image: url("../img/Rectangle-1-tablet@2x.png");
+      background-size: 100% 638px; } }
+
+@media (max-width: 1023px) {
   .home-page__title h1 {
     margin: 0;
     margin-bottom: 12px;
@@ -361,8 +383,7 @@ img {
   .home-page__text {
     width: 100%;
     margin: 0;
-    margin-bottom: 33px;
-    outline: 1px solid #0000ff; }
+    margin-bottom: 33px; }
   .home-page__text h2 {
     margin: 0;
     margin-bottom: 15px;
@@ -375,7 +396,15 @@ img {
     margin-bottom: 57px;
     padding-top: 88px;
     padding-left: 15px;
-    background-position: 0 -88px; }
+    background-image: url("../img/Rectangle-1-mobile.png");
+    background-position: 0 -88px;
+    background-size: 100% 500px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .home-page__title {
+      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-size: 100% 500px; } }
+
+@media (max-width: 767px) {
   .home-page__title h1 {
     margin: 0;
     margin-bottom: 12px;
@@ -535,6 +564,7 @@ img {
     height: 22px; }
   .page-footer__list-nav {
     display: block;
+    width: 100%;
     margin: 0;
     margin-bottom: 5px; }
   .page-footer__list-nav li {
