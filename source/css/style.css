@@ -90,7 +90,14 @@ img {
   padding: 0 7.6%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #3373b0; }
+  background-color: #3373b0;
+  background-image: url("../img/Rectangle-1-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 650px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/Rectangle-1-desktop@2x.png");
+      background-size: 1366px 650px; } }
 
 .page-header__logo:hover,
 .page-header__logo :focus {
@@ -138,7 +145,15 @@ img {
 @media (max-width: 1023px) {
   .page-header {
     min-height: 80px;
-    padding: 0 45px; }
+    padding: 0 45px;
+    background-image: url("../img/Rectangle-1-tablet.png");
+    background-size: 100% 638px; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/Rectangle-1-tablet@2x.png");
+      background-size: 100% 638px; } }
+
+@media (max-width: 1023px) {
   .page-header__logo svg {
     width: 38px;
     height: 20px; }
@@ -152,9 +167,18 @@ img {
     display: block;
     min-height: 0;
     padding: 0 4.7%;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    background-image: none; }
   .page-header__close {
-    background-color: #3373b0; }
+    background-color: #3373b0;
+    background-image: url("../img/Rectangle-1-mobile.png");
+    background-size: 100% 500px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .page-header__close {
+      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-size: 100% 500px; } }
+
+@media (max-width: 767px) {
   .page-header__path {
     fill: #011c40; }
   .page-header__logo-close {
@@ -200,7 +224,7 @@ img {
   .page-header__toggle-open {
     width: 24px;
     height: 12px;
-    background-color: #3373b0;
+    background-color: #002e65;
     background-image: url("../img/icon-open.svg");
     background-size: 24px 12px; }
   .page-header__wrapper {
@@ -220,6 +244,183 @@ img {
     display: none; } }
 
 /* Главная страница */
+.home-page {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 120px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.home-page__image img {
+  width: 560px;
+  height: 301px; }
+
+.home-page__text {
+  width: 512px;
+  margin-right: 20px;
+  padding-top: 56px; }
+
+.home-page__text h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px; }
+
+.home-page__text p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px; }
+
+.home-page__title {
+  width: 100%;
+  height: 542px;
+  margin-bottom: 120px;
+  padding-top: 162px;
+  padding-left: 198px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f9fbfd;
+  background-color: #3373b0;
+  background-image: url("../img/Rectangle-1-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 0 -108px;
+  background-size: 1366px 650px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .home-page__title {
+      background-image: url("../img/Rectangle-1-desktop@2x.png");
+      background-size: 1366px 650px; } }
+
+.home-page__title h1 {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px; }
+
+.home-page__title p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px; }
+
+.home-page__travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@media (max-width: 1023px) {
+  .home-page {
+    width: 100%; }
+  .home-page__image {
+    padding-top: 9px; }
+  .home-page__image img {
+    width: 324px;
+    height: 264px; }
+  .home-page__text {
+    width: 47.3%;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0; }
+  .home-page__text h2 {
+    width: 205px;
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 36px; }
+  .home-page__text p {
+    min-width: 324px; }
+  .home-page__title {
+    max-width: 100%;
+    height: 558px;
+    margin-bottom: 91px;
+    padding-top: 188px;
+    padding-left: 5.8%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: url("../img/Rectangle-1-tablet.png");
+    background-position: 0 -80px;
+    background-size: 100% 638px; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .home-page__title {
+      background-image: url("../img/Rectangle-1-tablet@2x.png");
+      background-size: 100% 638px; } }
+
+@media (max-width: 1023px) {
+  .home-page__title h1 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 50px;
+    line-height: 61px; }
+  .home-page__title p {
+    font-size: 18px;
+    line-height: 22px; }
+  .home-page__travel {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 45px; } }
+
+@media (max-width: 767px) {
+  .home-page__image {
+    width: 290px;
+    margin: 0 auto;
+    padding-top: 0; }
+  .home-page__image img {
+    width: 290px;
+    height: 186px; }
+  .home-page__text {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 33px; }
+  .home-page__text h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 34px; }
+  .home-page__text p {
+    min-width: 290px; }
+  .home-page__title {
+    height: 412px;
+    margin-bottom: 57px;
+    padding-top: 88px;
+    padding-left: 15px;
+    background-image: url("../img/Rectangle-1-mobile.png");
+    background-position: 0 -88px;
+    background-size: 100% 500px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .home-page__title {
+      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-size: 100% 500px; } }
+
+@media (max-width: 767px) {
+  .home-page__title h1 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 45px; }
+  .home-page__title p {
+    width: 200px;
+    font-size: 16px;
+    line-height: 22px; }
+  .home-page__travel {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px; } }
+
 /* Подвал сайта */
 .page-footer {
   display: -webkit-box;
@@ -267,7 +468,7 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 627px;
+  width: 600px;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -275,7 +476,7 @@ img {
 
 .page-footer__list-nav a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 496px;
   line-height: 20px;
   color: #ffffff; }
   .page-footer__list-nav a:hover {
@@ -363,6 +564,7 @@ img {
     height: 22px; }
   .page-footer__list-nav {
     display: block;
+    width: 100%;
     margin: 0;
     margin-bottom: 5px; }
   .page-footer__list-nav li {

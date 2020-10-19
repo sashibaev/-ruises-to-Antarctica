@@ -38,7 +38,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  width: 627px;
+  width: 600px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,7 +46,7 @@
 
 .page-footer__list-nav a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 496px;
   line-height: 20px;
   color: $background-light-color;
 
@@ -158,6 +158,8 @@
 
   .page-footer__list-nav {
     display: block;
+
+    width: 100%;
     margin: 0;
     margin-bottom: 5px;
   }

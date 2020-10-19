@@ -10,6 +10,14 @@
   box-sizing: border-box;
 
   background-color: $background-nav-color;
+  background-image: url("../img/Rectangle-1-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 650px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/Rectangle-1-desktop@2x.png");
+    background-size: 1366px 650px;
+  }
 }
 
 .page-header__logo {
@@ -69,6 +77,14 @@
   .page-header {
     min-height: 80px;
     padding: 0 45px;
+
+    background-image: url("../img/Rectangle-1-tablet.png");
+    background-size: 100% 638px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/Rectangle-1-tablet@2x.png");
+      background-size: 100% 638px;
+    }
   }
 
   .page-header__logo svg {
@@ -92,10 +108,18 @@
     padding: 0 4.7%;
 
     background-color: $background-light-color;
+    background-image: none;
   }
 
   .page-header__close {
     background-color: $background-nav-color;
+    background-image: url("../img/Rectangle-1-mobile.png");
+    background-size: 100% 500px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-size: 100% 500px;
+    }
   }
 
   .page-header__path {
@@ -170,7 +194,7 @@
     width: 24px;
     height: 12px;
 
-    background-color: $background-nav-color;
+    background-color: $background-open-color;
     background-image: url("../img/icon-open.svg");
     background-size: 24px 12px;
   }
