@@ -479,10 +479,19 @@ img {
 .advantages__liner p {
   width: 288px; }
 
+.advantages__non-breaking-space-first {
+  display: none; }
+
+.advantages__non-breaking-space-second {
+  display: none; }
+
 .advantages p {
   margin: 0;
   font-size: 14px;
   line-height: 20px; }
+
+.advantages__space-bar-first {
+  display: none; }
 
 .advantages__system h3::before {
   top: 35px;
@@ -561,6 +570,8 @@ img {
     background-size: 21px 26px; }
   .advantages__liner p {
     width: 154px; }
+  .advantages__space-bar-first {
+    display: inline; }
   .advantages__system h3 {
     width: 133px; }
   .advantages__system h3::before {
@@ -611,10 +622,14 @@ img {
     width: 64%; }
   .advantages__liner p {
     width: 94%; }
+  .advantages__space-bar-first {
+    display: none; }
+  .advantages__space-bar-second {
+    display: none; }
   .advantages__system h3 {
     width: 60%; }
   .advantages__system p {
-    width: 90%; }
+    width: 85%; }
   .advantages__tours h3 {
     min-width: 62%; }
   .advantages__tours p {
