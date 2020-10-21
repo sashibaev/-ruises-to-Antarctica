@@ -238,11 +238,46 @@
           </li>
         </ul>
       </section>
+      <section class="page-main__booking booking">
+        <div class="booking__description">
+          <h2>Раннее бронирование</h2>
+          <p>Забронируйте тур за&nbsp;3+6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+        </div>
+        <form class="booking__form" action="#" method="post" enctype="multipart/form-data" autocomplete="off">
+          <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</h3>
+          <ul class="booking__list">
+            <li>
+              <label class="visually-hidden" for="name">Ввести имя</label>
+              <input type="text" name="name" id="name" placeholder="Валерия" required="">
+            </li>
+            <li>
+              <label class="visually-hidden" for="phone">Ввести номер телефона</label>
+              <input type="tel" name="phone" id="phone" placeholder="89236889975" required="" pattern="\S+[0-9]+">
+            </li>
+            <li>
+              <label class="visually-hidden" for="email">Ввести почтовый адрес</label>
+              <input type="email" name="email" id="email" placeholder="grishaewa.lera@gmail.com" required="">
+            </li>
+          </ul>
+          <div class="booking__checkbox">
+            <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked="">
+            <label for="checkbox">
+              <span>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 2.5L5.28571 7L11 1" stroke="#101A56"></path>
+                </svg>
+              </span>
+              Я согласен на обработку моих&nbsp;персональных данных
+            </label>
+          </div>
+          <button type="submit">Оставить заявку</button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
         <a aria-label="Логотип Антарктика">
-          <img src="img/logo.svg" alt="Логотип">
+          <img src="img/icon-logo.svg" alt="Логотип">
         </a>
       </div>
       <ul class="page-footer__list-nav">
@@ -279,5 +314,6 @@
     </footer>
 
     <script src="js/page-header.js"></script>
+    <script src="js/booking-form.js"></script>
   </body>
 </html>

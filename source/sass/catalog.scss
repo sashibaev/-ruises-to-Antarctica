@@ -1,6 +1,7 @@
 .catalog {
   width: 100%;
   padding-top: 87px;
+  padding-bottom: 90px;
 
   font-size: 14px;
   font-weight: 500;
@@ -219,6 +220,7 @@
 @media (max-width: $tablet-width) {
   .catalog {
     padding-top: 68px;
+    padding-bottom: 70px;
   }
 
   .catalog a {
@@ -334,6 +336,7 @@
 @media (max-width: $mobile-width) {
   .catalog {
     padding-top: 38px;
+    padding-bottom: 35px;
   }
 
   .catalog a {
@@ -378,7 +381,7 @@
   }
 
   .catalog h2 {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     font-size: 24px;
     line-height: 36px;

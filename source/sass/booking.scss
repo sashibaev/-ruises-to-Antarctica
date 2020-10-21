@@ -1,0 +1,324 @@
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  min-height: 555px;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  font-weight: 400;
+
+  background-color: $background-main-color;
+  background-image: url("../img/Rectangle-19-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 555px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/Rectangle-19-desktop@2x.png");
+    background-size: 100% 555px;
+  }
+}
+
+.booking button {
+  width: 100%;
+  min-height: 43px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-family: $font-family;
+  color: $text-main-color;
+
+  background-color: $background-main-color;
+  border: none;
+}
+
+.booking__checkbox {
+  width: 279px;
+  margin-bottom: 31px;
+  padding-left: 24px;
+
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.booking__checkbox label {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.booking__checkbox label:hover,
+.booking__checkbox label:focus {
+  color: $text-hover-dark-color;
+}
+
+.booking__checkbox input + label svg {
+  display: none;
+}
+
+.booking__checkbox input:checked + label svg {
+  display: block;
+
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.booking__checkbox span {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -24px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: $background-main-color;
+}
+
+.booking__description {
+  width: 500px;
+  margin-right: 136px;
+  margin-left: 30px;
+
+  color: $text-main-color;
+}
+
+.booking__form {
+  width: 403px;
+  min-height: 455px;
+  margin-right: 30px;
+  padding-top: 44px;
+  padding-right: 50px;
+  padding-left: 50px;
+  box-sizing: border-box;
+
+  color: $text-light-color;
+
+  background-color: $background-dark-color;
+  box-shadow: 0 4px 45px $shadow-color;
+}
+
+.booking h2 {
+  margin: 0;
+  margin-top: 163px;
+  margin-bottom: 10px;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.booking h3 {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  border: none;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.booking li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.booking__list {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 24px;
+}
+
+.booking__list input {
+  display: block;
+
+  width: 100%;
+  min-height: 43px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-family: $font-family;
+  color: $text-main-color;
+
+  background-color: $background-main-color;
+  border: none;
+}
+
+.booking__list input::placeholder {
+  color: $text-main-color;
+}
+
+.booking p {
+  width: 352px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media (max-width: $tablet-width) {
+  .booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    min-height: 805px;
+    padding: 0;
+    padding-top: 88px;
+
+    background-image: url("../img/Rectangle-19-tablet.png");
+    background-size: 100% 805px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/Rectangle-19-tablet@2x.png");
+      background-size: 100% 805px;
+    }
+  }
+
+  .booking__description {
+    margin: 0;
+    margin-bottom: 53px;
+  }
+
+  .booking__form {
+    width: 403px;
+    min-height: 455px;
+    margin-right: 0;
+    padding-top: 44px;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+
+    color: $text-light-color;
+
+    background-color: $background-dark-color;
+    box-shadow: 0 4px 45px $shadow-color;
+  }
+
+  .booking h2 {
+    margin: 0;
+    margin-bottom: 4px;
+
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+
+  .booking h3 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+    border: none;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+  .booking p {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .booking {
+    min-height: 760px;
+    padding-top: 60px;
+
+    background-image: url("../img/Rectangle-19-mobile.png");
+    background-size: 100% 760px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/Rectangle-19-mobile@2x.png");
+      background-size: 100% 760px;
+    }
+  }
+
+  .booking__checkbox {
+    width: 156px;
+    margin-bottom: 26px;
+    padding-left: 28px;
+
+    line-height: 12px;
+  }
+
+  .booking__checkbox span {
+    top: 1px;
+    left: -28px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking__description {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
+  .booking__form {
+    width: 290px;
+    min-height: 460px;
+    padding-top: 34px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .booking h2 {
+    width: 194px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .booking h3 {
+    width: 228px;
+    margin-bottom: 29px;
+
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .booking__list {
+    margin-bottom: 20px;
+  }
+
+
+  .booking p {
+    width: 264px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
