@@ -15,7 +15,7 @@
 
   width: 210px;
   min-height: 40px;
-  margin-top: 26px;
+  margin-top: auto;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
@@ -34,6 +34,9 @@
 
 .catalog a:hover,
 .catalog a:focus {
+  width: 208px;
+  min-height: 38px;
+
   opacity: 0.5;
 }
 
@@ -62,10 +65,6 @@
     background-image: url("../img/Rectangle-15-desktop@2x.png");
     background-size: 260px 100%;
   }
-}
-
-.catalog__card {
-  display: none;
 }
 
 .catalog dd {
@@ -119,13 +118,14 @@
 }
 
 .catalog .catalog__item-title {
-  margin-top: 308px;
   margin-left: 5px;
 
   color: $text-light-color;
 }
 
 .catalog .catalog__item-title-hover {
+  display: none;
+
   margin-bottom: 13px;
 }
 
@@ -167,12 +167,18 @@
 }
 
 .catalog li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
   width: 260px;
   min-height: 386px;
   margin-right: 30px;
   margin-bottom: 30px;
   padding-top: 29px;
   padding-right: 23px;
+  padding-bottom: 22px;
   padding-left: 25px;
   box-sizing: border-box;
 
@@ -184,6 +190,15 @@
   list-style: none;
 }
 
+.catalog__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  opacity: 0;
+}
+
 .catalog li:hover,
 .catalog li:focus {
   background-image: none;
@@ -191,12 +206,20 @@
 
 .catalog li:hover .catalog__card,
 .catalog li:focus .catalog__card {
+  min-height: 322px;
+
+  opacity: 1;
+}
+
+.catalog li:hover .catalog__item-title-hover,
+.catalog li:focus .catalog__item-title-hover {
   display: block;
 }
 
 .catalog li:hover .catalog__item-title,
 .catalog li:focus .catalog__item-title {
   display: none;
+  margin-bottom: 13px;
 }
 
 .catalog p {
@@ -420,7 +443,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/Rectangle-12-mobile@2x.png");
-      bbackground-size: 270px 100%;
+      background-size: 270px 100%;
     }
   }
 

@@ -15,17 +15,30 @@
     <link rel="preload" href="fonts/montserrat-bold.woff" as="font">
   </head>
   <body>
+    <div class="sprite-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"><symbol id="icon-close" viewBox="0 0 15 15">
+<path d="M1 1L7.5 7.5M14 14L7.5 7.5M7.5 7.5L14 1L1 14" stroke="#011C40" stroke-width="2"></path>
+</symbol><symbol id="icon-logo">
+ <g class="layer">
+  <title>Layer 1</title>
+  <path class="page-header__path" clip-rule="evenodd" d="m0.90352,31.125l13.76908,-18.5821l3.7669,2.0131l8.9631,-14.556l5.5853,6.65881l2.0786,-1.70349l8.0534,10.22018l5.7156,-6.81359l15.9771,22.76309l-15.3926,-19.3561l-2.3383,8.1295l2.1433,6.4265l-13.769,-18.96932l-0.1491,6.47232l7.813,17.2971l-14.6135,-26.78926l4.2218,14.47876l-5.9101,-14.09158l-3.2475,9.36868l0.6492,-6.11688l-8.1185,22.06638l0.974,-9.2911l-3.3772,-3.7162l-12.79458,14.0912z" fill="#F9FBFD" fill-rule="evenodd" id="svg_1"></path>
+  <path class="page-header__path" clip-rule="evenodd" d="m69.4414,34.0314c-21.8004,-17.6034 -55.7323,6.5975 -69.4414,-2.7353c15.0723,13.2254 50.3019,-9.1317 69.4414,2.7353z" fill="#F9FBFD" fill-rule="evenodd" id="svg_2"></path>
+  <path class="page-header__path" clip-rule="evenodd" d="m70,35.4157c-17.1044,-10.8986 -42.5432,4.2681 -55.5811,0.756c14.1278,6.8566 40.4293,-8.3356 55.5811,-0.756z" fill="#F9FBFD" fill-rule="evenodd" id="svg_3"></path>
+ </g>
+</symbol><symbol id="icon-mark" viewBox="0 0 12 8">
+<path d="M1 2.5L5.28571 7L11 1" stroke="#101A56"></path>
+</symbol><symbol id="icon-open" viewBox="0 0 24 14">
+<path d="M0 1H24M0 7H24M0 13H24" stroke="#F9FBFD" stroke-width="2"></path>
+</symbol></svg>
+    </div>
+
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a aria-label="Логотип Антарктика">
-            <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="page-header__path" fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126
-              31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013
-              30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" fill="#F9FBFD"></path>
-              <path class="page-header__path" fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" fill="#F9FBFD"></path>
-              <path class="page-header__path" fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"></path>
-              </svg>
+            <svg class="page-header__logo-svg" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
           </a>
         </div>
         <div class="page-header__toggle">
@@ -50,10 +63,12 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="page-main__home-page home-page">
+      <section class="page-main__home-page home-page" id="directions">
         <div class="home-page__title">
-          <h1>Круизы в&nbsp;Антарктику</h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
+          <div class="home-page__wrapper">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов и пингвинов</p>
+          </div>
         </div>
         <div class="home-page__travel">
           <div class="home-page__text">
@@ -70,6 +85,7 @@
 
               <source media="(max-width: 767px)" srcset="img/Rectangle-2-mobile.png 1x, img/Rectangle-2-mobile@2x.png 2x">
               <source media="(max-width: 1023px)" srcset="img/Rectangle-2-tablet.png 1x, img/Rectangle-2-tablet@2x.png 2x">
+              <!-- 1х: 560px; 2x: 1120px -->
               <img src="img/Rectangle-2-desktop.png" srcset="img/Rectangle-2-desktop@2x.png" width="560" height="301" alt="Стая пингвинов">
             </picture>
           </div>
@@ -81,18 +97,17 @@
           <li class="advantages__liner">
             <h3>Небольшой круизный лайнер</h3>
             <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей,
-               поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и природой.</p>
+              поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и природой.</p>
           </li>
           <li class="advantages__system">
             <h3>Система все&nbsp;включено</h3>
             <p>Все наши круизы работают по&nbsp;системе “Все Включено”.
-               Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
           </li>
           <li class="advantages__tours">
             <h3>Экскурсионные туры на Zodiac</h3>
-            <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются
-              на&nbsp;<span class="advantages__space-bar-first"> </span>оборудованных
-              лодках типа&nbsp;<span class="advantages__space-bar-second"> </span>Zodiac в&nbsp;сопровождении опытных экскурсоводов.
+            <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br class="advantages__line-break">
+              на оборудованных лодках<br class="advantages__transfer"> типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.
             </p>
           </li>
         </ul>
@@ -101,24 +116,23 @@
         <h2>Ближайшие круизы</h2>
         <ul>
           <li class="catalog__astoria">
-              <h3 class="catalog__item-title">Круиз “Астория”</h3>
-              <div class="catalog__card">
-                <h3 class="catalog__item-title-hover">Круиз “Астория”</h3>
-                <dl>
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина - Фолклендские острова - Антарктида</dd>
-                  <dt class="catalog__name">Порт отправления</dt>
-                  <dd>Ушуайя</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>11 дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от 11500 $</dd>
-                </dl>
-                <a href="#">Забронировать</a>
-              </div>
+            <div class="catalog__card">
+              <h3 class="catalog__item-title-hover">Круиз “Астория”</h3>
+              <dl>
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Фолклендские острова - Антарктида</dd>
+                <dt class="catalog__name">Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>11 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 11500 $</dd>
+              </dl>
+              <a href="#">Забронировать</a>
+            </div>
+            <h3 class="catalog__item-title">Круиз “Астория”</h3>
           </li>
           <li class="catalog__elaine" tabindex="0">
-            <h3 class="catalog__item-title">Круиз “Элайн”</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз “Элайн”</h3>
               <dl>
@@ -133,9 +147,9 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз “Элайн”</h3>
           </li>
           <li class="catalog__atlantis" tabindex="0">
-            <h3 class="catalog__item-title">Круиз "Атлантис"</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз "Атлантис</h3>
               <dl>
@@ -150,9 +164,9 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз "Атлантис"</h3>
           </li>
           <li class="catalog__odyssey" tabindex="0">
-            <h3 class="catalog__item-title">Круиз "Одиссей"</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз "Одиссей"</h3>
               <dl>
@@ -167,9 +181,9 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз "Одиссей"</h3>
           </li>
           <li class="catalog__olympia" tabindex="0">
-            <h3 class="catalog__item-title">Круиз "Олимпия"</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз "Олимпия"</h3>
               <dl>
@@ -184,9 +198,9 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз "Олимпия"</h3>
           </li>
           <li class="catalog__aurora" tabindex="0">
-            <h3 class="catalog__item-title">Круиз "Аврора"</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз "Аврора"</h3>
               <dl>
@@ -201,9 +215,9 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз "Аврора"</h3>
           </li>
           <li class="catalog__leonor" tabindex="0">
-            <h3 class="catalog__item-title">Круиз "Леонор"</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз "Леонор"</h3>
               <dl>
@@ -218,9 +232,9 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз "Леонор"</h3>
           </li>
           <li class="catalog__minion" tabindex="0">
-            <h3 class="catalog__item-title">Круиз "Минион - 1"</h3>
             <div class="catalog__card">
               <h3 class="catalog__item-title-hover">Круиз "Минион - 1"</h3>
               <dl>
@@ -235,24 +249,25 @@
               </dl>
               <a href="#">Забронировать</a>
             </div>
+            <h3 class="catalog__item-title">Круиз "Минион - 1"</h3>
           </li>
         </ul>
       </section>
       <section class="page-main__booking booking">
         <div class="booking__description">
           <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за&nbsp;3+6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+          <p>Забронируйте тур<br class="booking__line-break"> за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
         </div>
         <form class="booking__form" action="#" method="post" enctype="multipart/form-data" autocomplete="off">
           <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</h3>
           <ul class="booking__list">
             <li>
               <label class="visually-hidden" for="name">Ввести имя</label>
-              <input type="text" name="name" id="name" placeholder="Валерия" required="">
+              <input type="text" name="name" id="name" placeholder="Валерия" minlength="5" maxlength="12" required="">
             </li>
             <li>
               <label class="visually-hidden" for="phone">Ввести номер телефона</label>
-              <input type="tel" name="phone" id="phone" placeholder="89236889975" required="" pattern="\S+[0-9]+">
+              <input type="tel" name="phone" id="phone" placeholder="89236889975" minlength="11" maxlength="11" required="" pattern="\S+[0-9]+">
             </li>
             <li>
               <label class="visually-hidden" for="email">Ввести почтовый адрес</label>
@@ -264,7 +279,7 @@
             <label for="checkbox">
               <span>
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 2.5L5.28571 7L11 1" stroke="#101A56"></path>
+                  <use xlink:href="#icon-mark"></use>
                 </svg>
               </span>
               Я согласен на обработку моих&nbsp;персональных данных
@@ -273,47 +288,76 @@
           <button type="submit">Оставить заявку</button>
         </form>
       </section>
+      <section class="page-main__contacts contacts" id="contacts">
+        <div class="contacts__map">
+          <div class="contacts__image contacts__mark">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/Rectangle-26-mobile.webp 1x, img/webp/Rectangle-26-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/webp/Rectangle-26-tablet.webp 1x, img/webp/Rectangle-26-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/Rectangle-26-desktop.webp 1x, img/webp/Rectangle-26-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/Rectangle-26-mobile.png 1x, img/Rectangle-26-mobile@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="img/Rectangle-26-tablet.png 1x, img/Rectangle-26-tablet@2x.png 2x">
+              <!-- 1х: 560px; 2x: 1120px -->
+              <img src="img/Rectangle-26-desktop.png" srcset="img/Rectangle-26-desktop@2x.png" width="560" height="306" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+            </picture>
+          </div>
+          <div class="contacts__iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603376720026!5m2!1sru!2sru" width="560" height="306" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+        <div class="contacts__details">
+          <h2>У вас ещё остались вопросы или сомнения? Приезжайте к нам в&nbsp;офис и мы вам все расскажем.</h2>
+          <p class="contacts__address contacts__mark">
+            <a href="#">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</a>
+          </p>
+          <p class="contacts__phone">
+            <a href="tel:8-800-200-00-00">8-800-200-00-00</a>
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a aria-label="Логотип Антарктика">
-          <img src="img/icon-logo.svg" alt="Логотип">
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a aria-label="Логотип Антарктика">
+            <img src="img/logo.svg" alt="Логотип">
+          </a>
+        </div>
+        <ul class="page-footer__list-nav">
+          <li>
+            <a href="#advantages">Преимущества</a>
+          </li>
+          <li>
+            <a href="#directions">Направления</a>
+          </li>
+          <li>
+            <a href="#next-cruises">Ближайшие круизы</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-facebook">
+            <a href="https://www.facebook.com" aria-label="Мы в Фейсбуке">
+              <img src="img/facebook.svg" width="11" height="20" alt="Логотип Фейсбук">
+            </a>
+          </li>
+          <li class="page-footer__social-instagram">
+            <a href="https://www.instagram.com" aria-label="Мы в Инстаграме">
+              <img src="img/instagram.svg" width="20" height="20" alt="Логотип Инстаграм">
+            </a>
+          </li>
+          <li class="page-footer__social-twitter">
+            <a href="https://twitter.com/" aria-label="Мы в Твиттере">
+              <img src="img/twitter.svg" width="20" height="16" alt="Логотип Твиттер">
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="page-footer__list-nav">
-        <li>
-          <a href="#advantages">Преимущества</a>
-        </li>
-        <li>
-          <a href="#directions">Направления</a>
-        </li>
-        <li>
-          <a href="#next-cruises">Ближайшие круизы</a>
-        </li>
-        <li>
-          <a href="#contacts">Контакты</a>
-        </li>
-      </ul>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-facebook">
-          <a href="https://www.facebook.com" aria-label="Мы в Фейсбуке">
-            <img src="img/facebook.svg" width="11" height="20" alt="Логотип Фейсбук">
-          </a>
-        </li>
-        <li class="page-footer__social-instagram">
-          <a href="https://www.instagram.com" aria-label="Мы в Инстаграме">
-            <img src="img/instagram.svg" width="20" height="20" alt="Логотип Инстаграм">
-          </a>
-        </li>
-        <li class="page-footer__social-twitter">
-          <a href="https://twitter.com/" aria-label="Мы в Твиттере">
-            <img src="img/twitter.svg" width="20" height="16" alt="Логотип Твиттер">
-          </a>
-        </li>
-      </ul>
     </footer>
 
-    <script src="js/page-header.js"></script>
-    <script src="js/booking-form.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

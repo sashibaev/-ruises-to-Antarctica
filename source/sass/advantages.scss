@@ -91,10 +91,6 @@
   line-height: 20px;
 }
 
-.advantages__space-bar-first {
-  display: none;
-}
-
 .advantages__system h3::before {
   top: 35px;
 
@@ -121,6 +117,10 @@
 
 .advantages__tours p {
   width: 241px;
+}
+
+.advantages__transfer {
+  content: "";
 }
 
 .advantages ul {
@@ -193,8 +193,8 @@
     width: 154px;
   }
 
-  .advantages__space-bar-first {
-    display: inline;
+  .advantages__line-break {
+    content: "";
   }
 
   .advantages__system h3 {
@@ -277,12 +277,8 @@
     width: 94%;
   }
 
-  .advantages__space-bar-first {
-    display: none;
-  }
-
-  .advantages__space-bar-second {
-    display: none;
+  .advantages__line-break {
+    content: none;
   }
 
   .advantages__system h3 {
@@ -299,6 +295,10 @@
 
   .advantages__tours p {
     min-width: 92%;
+  }
+
+  .advantages__transfer {
+    content: none;
   }
 
   .advantages ul {
