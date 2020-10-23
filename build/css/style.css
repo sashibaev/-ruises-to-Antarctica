@@ -684,8 +684,6 @@ img {
 
 .catalog a:hover,
 .catalog a:focus {
-  width: 208px;
-  min-height: 38px;
   opacity: 0.5; }
 
 .catalog__astoria {
@@ -876,8 +874,7 @@ img {
     padding-top: 68px;
     padding-bottom: 70px; }
   .catalog a {
-    width: 239px;
-    margin-top: 26px; }
+    width: 239px; }
   .catalog__astoria {
     background-image: url("../img/Rectangle-31-tablet.png"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -915,7 +912,6 @@ img {
     font-size: 26px;
     line-height: 39px; }
   .catalog .catalog__item-title {
-    margin-top: 304px;
     margin-left: 0; }
   .catalog .catalog__item-title-hover {
     margin-bottom: 13px; }
@@ -955,6 +951,7 @@ img {
     width: 309px;
     min-height: 386px;
     padding-right: 34px;
+    padding-bottom: 28px;
     padding-left: 35px;
     background-size: 309px 100%; }
   .catalog ul {
@@ -967,8 +964,7 @@ img {
     padding-top: 38px;
     padding-bottom: 35px; }
   .catalog a {
-    width: 220px;
-    margin-top: 26px; }
+    width: 220px; }
   .catalog__astoria {
     background-image: url("../img/Rectangle-31-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1006,7 +1002,6 @@ img {
     font-size: 24px;
     line-height: 36px; }
   .catalog .catalog__item-title {
-    margin-top: 312px;
     margin-left: 0; }
   .catalog .catalog__item-title-hover {
     margin-bottom: 13px; }
@@ -1044,10 +1039,12 @@ img {
 @media (max-width: 767px) {
   .catalog li {
     width: 270px;
-    min-height: 386px;
+    height: 386px;
     margin-right: 20px;
+    margin-bottom: 30px;
     margin-left: 20px;
     padding-right: 24px;
+    padding-bottom: 18px;
     padding-left: 25px;
     background-size: 270px 100%; }
   .catalog ul {
