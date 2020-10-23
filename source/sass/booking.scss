@@ -40,6 +40,17 @@
 
   background-color: $background-main-color;
   border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    opacity: 0.5;
+  }
+
+  :active {
+    opacity: 0.2;
+  }
 }
 
 .booking__checkbox {
@@ -165,6 +176,16 @@
 
   background-color: $background-main-color;
   border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus,
+  :active {
+    padding-left: 14px;
+
+    border: 2px solid $border-color;
+  }
 }
 
 .booking__list input::placeholder {

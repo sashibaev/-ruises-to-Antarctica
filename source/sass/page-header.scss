@@ -25,6 +25,10 @@
   :focus {
     opacity: 0.5;
   }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .page-header__nav {
@@ -66,6 +70,10 @@
   &:hover,
   :focus {
     color: $text-hover-dark-color;
+  }
+
+  &:active {
+    opacity: 0.5;;
   }
 }
 

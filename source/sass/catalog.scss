@@ -37,6 +37,10 @@
   opacity: 0.5;
 }
 
+.catalog a:active {
+  opacity: 0.2;
+}
+
 .catalog__astoria {
   background-image: url("../img/Rectangle-9-desktop.png");
 

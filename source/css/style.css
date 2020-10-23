@@ -101,6 +101,9 @@ img {
 .page-header__logo :focus {
   opacity: 0.5; }
 
+.page-header__logo:active {
+  opacity: 0.2; }
+
 .page-header__nav {
   margin: 0;
   padding: 0; }
@@ -136,6 +139,8 @@ img {
   .page-header__nav li:hover,
   .page-header__nav li :focus {
     color: #8f8f8f; }
+  .page-header__nav li:active {
+    opacity: 0.5; }
 
 .page-header__toggle {
   display: none; }
@@ -686,6 +691,9 @@ img {
 .catalog a:focus {
   opacity: 0.5; }
 
+.catalog a:active {
+  opacity: 0.2; }
+
 .catalog__astoria {
   background-image: url("../img/Rectangle-9-desktop.png"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1092,7 +1100,13 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
   background-color: #f9fbfd;
-  border: none; }
+  border: none;
+  cursor: pointer; }
+  .booking button:hover,
+  .booking button :focus {
+    opacity: 0.5; }
+  .booking button :active {
+    opacity: 0.2; }
 
 .booking__checkbox {
   width: 279px;
@@ -1192,7 +1206,13 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
   background-color: #f9fbfd;
-  border: none; }
+  border: none;
+  cursor: pointer; }
+  .booking__list input:hover,
+  .booking__list input :focus,
+  .booking__list input :active {
+    padding-left: 14px;
+    border: 2px solid #14943f; }
 
 .booking__list input::-webkit-input-placeholder {
   color: #011c40; }
