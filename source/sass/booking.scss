@@ -14,13 +14,13 @@
   font-weight: 400;
 
   background-color: $background-main-color;
-  background-image: url("../img/Rectangle-19-desktop.png");
+  background-image: url("../img/Rectangle-19-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 555px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/Rectangle-19-desktop@2x.png");
+    background-image: url("../img/Rectangle-19-desktop@2x.jpg");
     background-size: 100% 555px;
   }
 }

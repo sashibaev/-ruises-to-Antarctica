@@ -46,13 +46,13 @@
   color: $text-light-color;
 
   background-color: $background-nav-color;
-  background-image: url("../img/Rectangle-1-desktop.png");
+  background-image: url("../img/Rectangle-1-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 0 -108px;
   background-size: 1366px 650px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/Rectangle-1-desktop@2x.png");
+    background-image: url("../img/Rectangle-1-desktop@2x.jpg");
     background-size: 1366px 650px;
   }
 }

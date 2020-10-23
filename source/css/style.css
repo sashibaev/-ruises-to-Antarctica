@@ -89,12 +89,12 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #3373b0;
-  background-image: url("../img/Rectangle-1-desktop.png");
+  background-image: url("../img/Rectangle-1-desktop.jpg");
   background-repeat: no-repeat;
   background-size: 1366px 650px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/Rectangle-1-desktop@2x.png");
+      background-image: url("../img/Rectangle-1-desktop@2x.jpg");
       background-size: 1366px 650px; } }
 
 .page-header__logo:hover,
@@ -287,13 +287,13 @@ img {
           box-sizing: border-box;
   color: #f9fbfd;
   background-color: #3373b0;
-  background-image: url("../img/Rectangle-1-desktop.png");
+  background-image: url("../img/Rectangle-1-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 0 -108px;
   background-size: 1366px 650px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .home-page__title {
-      background-image: url("../img/Rectangle-1-desktop@2x.png");
+      background-image: url("../img/Rectangle-1-desktop@2x.jpg");
       background-size: 1366px 650px; } }
 
 .home-page__title h1 {
@@ -445,13 +445,13 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #e3ecf6;
-  background-image: url("../img/Rectangle-3-desktop.png");
+  background-image: url("../img/Rectangle-3-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantages {
-      background-image: url("../img/Rectangle-3-desktop@2x.png");
+      background-image: url("../img/Rectangle-3-desktop@2x.jpg");
       background-size: 1366px 562px; } }
 
 .advantages h2 {
@@ -695,24 +695,24 @@ img {
   opacity: 0.2; }
 
 .catalog__astoria {
-  background-image: url("../img/Rectangle-9-desktop.png"); }
+  background-image: url("../img/Rectangle-9-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__astoria {
-      background-image: url("../img/Rectangle-9-desktop@2x.png");
+      background-image: url("../img/Rectangle-9-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog__atlantis {
-  background-image: url("../img/Rectangle-11-desktop.png"); }
+  background-image: url("../img/Rectangle-11-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__atlantis {
-      background-image: url("../img/Rectangle-11-desktop@2x.png");
+      background-image: url("../img/Rectangle-11-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog__aurora {
-  background-image: url("../img/Rectangle-15-desktop.png"); }
+  background-image: url("../img/Rectangle-15-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__aurora {
-      background-image: url("../img/Rectangle-15-desktop@2x.png");
+      background-image: url("../img/Rectangle-15-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog dd {
@@ -732,10 +732,10 @@ img {
   color: #f9fbfd; }
 
 .catalog__elaine {
-  background-image: url("../img/Rectangle-9-desktop.png"); }
+  background-image: url("../img/Rectangle-9-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__elaine {
-      background-image: url("../img/Rectangle-9-desktop@2x.png");
+      background-image: url("../img/Rectangle-9-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog h2 {
@@ -763,31 +763,31 @@ img {
   margin-bottom: 13px; }
 
 .catalog__leonor {
-  background-image: url("../img/Rectangle-14-desktop.png"); }
+  background-image: url("../img/Rectangle-14-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__leonor {
-      background-image: url("../img/Rectangle-14-desktop@2x.png");
+      background-image: url("../img/Rectangle-14-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog__minion {
-  background-image: url("../img/Rectangle-16-desktop.png"); }
+  background-image: url("../img/Rectangle-16-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__minion {
-      background-image: url("../img/Rectangle-16-desktop@2x.png");
+      background-image: url("../img/Rectangle-16-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog__odyssey {
-  background-image: url("../img/Rectangle-12-desktop.png"); }
+  background-image: url("../img/Rectangle-12-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__odyssey {
-      background-image: url("../img/Rectangle-12-desktop@2x.png");
+      background-image: url("../img/Rectangle-12-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog__olympia {
-  background-image: url("../img/Rectangle-13-desktop.png"); }
+  background-image: url("../img/Rectangle-13-desktop.jpg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__olympia {
-      background-image: url("../img/Rectangle-13-desktop@2x.png");
+      background-image: url("../img/Rectangle-13-desktop@2x.jpg");
       background-size: 260px 100%; } }
 
 .catalog li {
@@ -1079,13 +1079,13 @@ img {
           box-sizing: border-box;
   font-weight: 400;
   background-color: #f9fbfd;
-  background-image: url("../img/Rectangle-19-desktop.png");
+  background-image: url("../img/Rectangle-19-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 555px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .booking {
-      background-image: url("../img/Rectangle-19-desktop@2x.png");
+      background-image: url("../img/Rectangle-19-desktop@2x.jpg");
       background-size: 100% 555px; } }
 
 .booking button {
