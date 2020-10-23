@@ -34,9 +34,6 @@
 
 .catalog a:hover,
 .catalog a:focus {
-  width: 208px;
-  min-height: 38px;
-
   opacity: 0.5;
 }
 
@@ -248,7 +245,6 @@
 
   .catalog a {
     width: 239px;
-    margin-top: 26px;
   }
 
   .catalog__astoria {
@@ -295,7 +291,6 @@
   }
 
   .catalog .catalog__item-title {
-    margin-top: 304px;
     margin-left: 0;
   }
 
@@ -344,6 +339,7 @@
     width: 309px;
     min-height: 386px;
     padding-right: 34px;
+    padding-bottom: 28px;
     padding-left: 35px;
 
     background-size: 309px 100%;
@@ -364,7 +360,6 @@
 
   .catalog a {
     width: 220px;
-    margin-top: 26px;
   }
 
   .catalog__astoria {
@@ -411,7 +406,6 @@
   }
 
   .catalog .catalog__item-title {
-    margin-top: 312px;
     margin-left: 0;
   }
 
@@ -458,10 +452,12 @@
 
   .catalog li {
     width: 270px;
-    min-height: 386px;
+    height: 386px;
     margin-right: 20px;
+    margin-bottom: 30px;
     margin-left: 20px;
     padding-right: 24px;
+    padding-bottom: 18px;
     padding-left: 25px;
 
     background-size: 270px 100%;
