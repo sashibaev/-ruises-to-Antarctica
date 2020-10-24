@@ -11,13 +11,19 @@
   box-sizing: border-box;
 }
 
-.contacts__address {
+.contacts__address a {
   position: relative;
 }
 
-.contacts__address::before {
-  top: 0;
-  left: -28px;
+.contacts__address a::before {
+  position: absolute;
+  content: url("../img/label.svg");
+  top: -2px;
+  left: -29px;
+  z-index: 1;
+
+  width: 18px;
+  height: 22px;
 }
 
 .contacts__details {
@@ -35,6 +41,24 @@
   color: $text-main-color;
 
   text-decoration: none;
+}
+
+.contacts__details a:hover,
+.contacts__details a:focus {
+  opacity: 0.6;
+}
+
+.contacts__details a:active {
+  opacity: 0.9;
+}
+
+.contacts__details a:hover .contacts__details a::before,
+.contacts__details a:focus .contacts__details a::before {
+  opacity: 0.6;
+}
+
+.contacts__details p:active .contacts__details a::before {
+  opacity: 0.9;
 }
 
 .contacts__details h2 {
@@ -75,13 +99,10 @@
 }
 
 .contacts__image::before {
-  top: 217px;
-  left: 249px;
-}
-
-.contacts__mark::before {
   position: absolute;
   content: url("../img/label.svg");
+  top: 217px;
+  left: 249px;
   z-index: 1;
 
   width: 18px;
@@ -96,15 +117,15 @@
   border: none;
 }
 
-.contacts__phone {
+.contacts__phone a {
   position: relative;
 }
 
-.contacts__phone::before {
+.contacts__phone a::before {
   position: absolute;
   content: url("../img/phone.svg");
-  top: 1px;
-  left: -28px;
+  top: -1px;
+  left: -29px;
   z-index: 1;
 
   width: 18px;
@@ -128,8 +149,9 @@
     width: 260px;
   }
 
-  .contacts__address::before {
-    top: 4px;
+  .contacts__address a::before {
+    top: 2px;
+    left: -28px;
   }
 
   .contacts__details {
@@ -172,6 +194,11 @@
   .contacts__map {
     margin: 0;
   }
+
+  .contacts__phone a::before {
+    top: -2px;
+    left: -28px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -186,8 +213,8 @@
     padding-left: 15px;
   }
 
-  .contacts__address::before {
-    top: 5px;
+  .contacts__address a::before {
+    top: 3px;
   }
 
   .contacts__details {
@@ -230,5 +257,9 @@
 
   .contacts__map {
     max-width: 100%;
+  }
+
+  .contacts__phone a::before {
+    top: -1px;
   }
 }

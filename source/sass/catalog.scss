@@ -25,16 +25,20 @@
   font-weight: 600;
   line-height: 21px;
   text-align: center;
+  text-decoration: none;
   color: $text-main-color;
 
   background-color: $background-main-color;
 
-  text-decoration: none;
+  opacity: 0;
 }
 
-.catalog a:hover,
+.catalog a:hover {
+  background-color: $background-focus-color;
+}
+
 .catalog a:focus {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .catalog a:active {
@@ -80,6 +84,8 @@
 .catalog dl {
   margin: 0;
   padding: 0;
+
+  opacity: 0;
 }
 
 .catalog dt {
@@ -196,29 +202,29 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
-  opacity: 0;
 }
 
-.catalog li:hover,
-.catalog li:focus {
+.catalog li:hover {
   background-image: none;
 }
 
-.catalog li:hover .catalog__card,
-.catalog li:focus .catalog__card {
+.catalog li:hover .catalog__card {
   min-height: 322px;
+}
 
+.catalog li:hover .catalog__card a {
   opacity: 1;
 }
 
-.catalog li:hover .catalog__item-title-hover,
-.catalog li:focus .catalog__item-title-hover {
+.catalog li:hover .catalog__card dl {
+  opacity: 1;
+}
+
+.catalog li:hover .catalog__item-title-hover {
   display: block;
 }
 
-.catalog li:hover .catalog__item-title,
-.catalog li:focus .catalog__item-title {
+.catalog li:hover .catalog__item-title {
   display: none;
   margin-bottom: 13px;
 }
@@ -370,7 +376,7 @@
     background-image: url("../img/Rectangle-31-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-31-mobile@2x.png");
+      background-image: url("../img/Rectangle-31-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -379,7 +385,7 @@
     background-image: url("../img/Rectangle-11-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-11-mobile@2x.png");
+      background-image: url("../img/Rectangle-11-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -388,7 +394,7 @@
     background-image: url("../img/Rectangle-15-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-15-mobile@2x.png");
+      background-image: url("../img/Rectangle-15-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -397,7 +403,7 @@
     background-image: url("../img/Rectangle-31-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-31-mobile@2x.png");
+      background-image: url("../img/Rectangle-31-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -421,7 +427,7 @@
     background-image: url("../img/Rectangle-14-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-14-mobile@2x.png");
+      background-image: url("../img/Rectangle-14-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -430,7 +436,7 @@
     background-image: url("../img/Rectangle-16-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-16-mobile@2x.png");
+      background-image: url("../img/Rectangle-16-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -440,7 +446,7 @@
     background-image: url("../img/Rectangle-12-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-12-mobile@2x.png");
+      background-image: url("../img/Rectangle-12-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }
@@ -449,7 +455,7 @@
     background-image: url("../img/Rectangle-13-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-13-mobile@2x.png");
+      background-image: url("../img/Rectangle-13-mobile@2x.jpg");
       background-size: 270px 100%;
     }
   }

@@ -1,17 +1,14 @@
 'use strict';
 
 window.main = (function () {
-  var MIN_NAME_LENGTH = 5;
-  var MAX_NAME_LENGTH = 12;
   var MIN_PHONE_LENGTH = 11;
   var MAX_PHONE_LENGTH = 11;
 
   var menu = document.querySelector('.page-header');
   var button = menu.querySelector('.page-header__toggle-close');
   var mainNav = menu.querySelector('.page-header__nav');
-  var numbersFillSvg = document.querySelectorAll('.page-header__path');
+  var numbersFillSvg = document.querySelectorAll('.sprite-svg__path');
   var form = document.querySelector('.booking__form');
-  var nameForm = form.querySelector('#name');
   var phoneForm = form.querySelector('#phone');
 
   var toCheckTheLength = function (element, minNumber, maxNumber) {
@@ -29,27 +26,40 @@ window.main = (function () {
   };
 
   var addFill = function (item) {
-    item.classList.add('page-header__logo-close');
+    item.classList.add('sprite-svg__logo-close');
   };
 
   var toChangeFill = function (item) {
-    item.classList.toggle('page-header__logo-close');
+    item.classList.toggle('sprite-svg__logo-close');
+
   };
 
-  button.classList.remove('page-header__toggle-close');
-  button.classList.add('page-header__toggle-open');
-  mainNav.classList.add('page-header__wrapper--hidden');
-  menu.classList.add('page-header__close');
-  numbersFillSvg.forEach(addFill);
+  if (button) {
+    button.classList.remove('page-header__toggle-close');
+    button.classList.add('page-header__toggle-open');
+  }
+
+  if (mainNav) {
+    mainNav.classList.add('page-header__header-wrapper--hidden');
+  }
+
+  if (menu) {
+    menu.classList.add('page-header__close');
+  }
+
+  if (numbersFillSvg) {
+    numbersFillSvg.forEach(addFill);
+  }
+
+  if (phoneForm) {
+    toCheckTheLength(phoneForm, MIN_PHONE_LENGTH, MAX_PHONE_LENGTH);
+  }
 
   button.addEventListener('click', function () {
     button.classList.toggle('page-header__toggle-close');
     button.classList.toggle('page-header__toggle-open');
-    mainNav.classList.toggle('page-header__wrapper--hidden');
+    mainNav.classList.toggle('page-header__header-wrapper--hidden');
     menu.classList.toggle('page-header__close');
     numbersFillSvg.forEach(toChangeFill);
   });
-
-  toCheckTheLength(nameForm, MIN_NAME_LENGTH, MAX_NAME_LENGTH);
-  toCheckTheLength(phoneForm, MIN_PHONE_LENGTH, MAX_PHONE_LENGTH);
 })();

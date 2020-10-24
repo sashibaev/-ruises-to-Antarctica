@@ -22,38 +22,40 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <a aria-label="Логотип Антарктика">
-            <svg class="page-header__logo-svg" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#icon-logo"></use>
-            </svg>
-          </a>
+        <div class="page-header__header-wrapper">
+          <div class="page-header__logo">
+            <a aria-label="Логотип Антарктика">
+              <svg class="page-header__logo-svg" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="page-header__toggle">
+            <button class="page-header__toggle-close" type="button" aria-label="Открыть или закрыть меню"></button>
+          </div>
         </div>
-        <div class="page-header__toggle">
-          <button class="page-header__toggle-close" type="button" aria-label="Открыть или закрыть меню"></button>
-        </div>
+        <nav class="page-header__nav">
+          <ul>
+            <li>
+              <a href="#advantages">Преимущества</a>
+            </li>
+            <li>
+              <a href="#directions">Направления</a>
+            </li>
+            <li>
+              <a href="#next-cruises">Ближайшие круизы</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="page-header__nav">
-        <ul>
-          <li>
-            <a href="#advantages">Преимущества</a>
-          </li>
-          <li>
-            <a href="#directions">Направления</a>
-          </li>
-          <li>
-            <a href="#next-cruises">Ближайшие круизы</a>
-          </li>
-          <li>
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <section class="page-main__home-page home-page" id="directions">
         <div class="home-page__title">
-          <div class="home-page__wrapper">
+          <div class="home-page__title-wrapper">
             <h1>Круизы в&nbsp;Антарктику</h1>
             <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
@@ -251,7 +253,7 @@
           <ul class="booking__list">
             <li>
               <label class="visually-hidden" for="name">Ввести имя</label>
-              <input type="text" name="name" id="name" placeholder="Валерия" minlength="5" maxlength="12" required>
+              <input type="text" name="name" id="name" placeholder="Валерия" required>
             </li>
             <li>
               <label class="visually-hidden" for="phone">Ввести номер телефона</label>
@@ -263,7 +265,7 @@
             </li>
           </ul>
           <div class="booking__checkbox">
-            <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked>
+            <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked required>
             <label for="checkbox">
               <span>
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +280,7 @@
       </section>
       <section class="page-main__contacts contacts" id="contacts">
         <div class="contacts__map">
-          <div class="contacts__image contacts__mark">
+          <div class="contacts__image">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/Rectangle-26-mobile.webp 1x, img/webp/Rectangle-26-mobile@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/webp/Rectangle-26-tablet.webp 1x, img/webp/Rectangle-26-tablet@2x.webp 2x">
@@ -296,7 +298,7 @@
         </div>
         <div class="contacts__details">
           <h2>У вас ещё остались вопросы или сомнения? Приезжайте к нам в&nbsp;офис и мы вам все расскажем.</h2>
-          <p class="contacts__address contacts__mark">
+          <p class="contacts__address">
             <a href="#">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</a>
           </p>
           <p class="contacts__phone">

@@ -42,15 +42,15 @@
   border: none;
 
   cursor: pointer;
+}
 
-  &:hover,
-  :focus {
-    opacity: 0.5;
-  }
+.booking button:hover,
+.booking button:focus {
+  opacity: 0.5;
+}
 
-  :active {
-    opacity: 0.2;
-  }
+.booking button:active {
+  opacity: 0.2;
 }
 
 .booking__checkbox {
@@ -68,9 +68,20 @@
   cursor: pointer;
 }
 
-.booking__checkbox label:hover,
-.booking__checkbox label:focus {
+.booking__checkbox label:hover {
   color: $text-hover-dark-color;
+}
+
+.booking__checkbox label:hover span {
+  opacity: 0.5;
+}
+
+.booking__checkbox input:focus + label {
+  opacity: 0.5;
+}
+
+.booking__checkbox input:active + label {
+  opacity: 0.9;
 }
 
 .booking__checkbox input + label svg {
@@ -95,6 +106,10 @@
   height: 18px;
 
   background-color: $background-main-color;
+}
+
+.booking__checkbox span:hover {
+  opacity: 0.5;
 }
 
 .booking__description {
@@ -176,16 +191,22 @@
 
   background-color: $background-main-color;
   border: none;
+  border-radius: 0;
 
   cursor: pointer;
+}
 
-  &:hover,
-  :focus,
-  :active {
-    padding-left: 14px;
+.booking__list input:hover {
+  padding-left: 14px;
 
-    border: 2px solid $border-color;
-  }
+  border: 2px solid $border-color;
+}
+
+.booking__list input:focus,
+.booking__list input:active {
+  padding-left: 14px;
+
+  background-color: $background-focus-color;
 }
 
 .booking__list input::placeholder {
@@ -282,7 +303,7 @@
     background-size: 100% 760px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-19-mobile@2x.png");
+      background-image: url("../img/Rectangle-19-mobile@2x.jpg");
       background-size: 100% 760px;
     }
   }

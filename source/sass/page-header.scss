@@ -1,33 +1,16 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   width: 100%;
-  min-height: 108px;
   margin: 0;
-  padding: 0 7.6%;
-  box-sizing: border-box;
+  padding: 0;
 
   background-color: $background-nav-color;
   background-image: url("../img/Rectangle-1-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: 1366px 650px;
+  background-size: 100% 650px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/Rectangle-1-desktop@2x.jpg");
-    background-size: 1366px 650px;
-  }
-}
-
-.page-header__logo {
-  &:hover,
-  :focus {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.2;
+    background-size: 100% 650px;
   }
 }
 
@@ -40,10 +23,15 @@
   color: $text-light-color;
 
   text-decoration: none;
+}
 
-  &:hover {
-    color: $text-hover-dark-color;
-  }
+.page-header__nav a:hover,
+.page-header__nav a:focus {
+  color: $text-hover-dark-color;
+}
+
+.page-header__nav a:active {
+  opacity: 0.5;
 }
 
 .page-header__nav ul {
@@ -66,26 +54,26 @@
   line-height: 20px;
 
   list-style: none;
-
-  &:hover,
-  :focus {
-    color: $text-hover-dark-color;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 .page-header__toggle {
   display: none;
 }
 
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1366px;
+  min-height: 108px;
+  margin: 0 auto;
+  padding: 0 7.6%;
+  box-sizing: border-box;
+}
+
 @media (max-width: $tablet-width) {
   .page-header {
-    min-height: 80px;
-    padding: 0 45px;
-
     background-image: url("../img/Rectangle-1-tablet.png");
     background-size: 100% 638px;
 
@@ -106,15 +94,15 @@
     font-size: 14px;
     line-height: 17px;
   }
+
+  .page-header__wrapper {
+    min-height: 80px;
+    padding: 0 45px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .page-header {
-    display: block;
-
-    min-height: 0;
-    padding: 0 4.7%;
-
     background-color: $background-main-color;
     background-image: none;
   }
@@ -125,17 +113,9 @@
     background-size: 100% 500px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-image: url("../img/Rectangle-1-mobile@2x.jpg");
       background-size: 100% 500px;
     }
-  }
-
-  .page-header__path {
-    fill: $menu-svg-fill;
-  }
-
-  .page-header__logo-close {
-    fill: $menu-logo-fill;
   }
 
   .page-header__nav a {
@@ -207,7 +187,7 @@
     background-size: 24px 12px;
   }
 
-  .page-header__wrapper {
+  .page-header__header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,7 +196,14 @@
     height: 62px;
   }
 
-  .page-header__wrapper--hidden {
+  .page-header__header-wrapper--hidden {
     display: none;
+  }
+
+  .page-header__wrapper {
+    display: block;
+
+    min-height: 0;
+    padding: 0 4.7%;
   }
 }

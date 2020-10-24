@@ -35,7 +35,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1366px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   border: none;
@@ -65,6 +65,7 @@ img {
 
 @media (max-width: 1023px) {
   body {
+    width: auto;
     min-width: 768px; } }
 
 @media (max-width: 767px) {
@@ -73,36 +74,17 @@ img {
 
 /* Шапка сайта */
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  min-height: 108px;
   margin: 0;
-  padding: 0 7.6%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 0;
   background-color: #3373b0;
   background-image: url("../img/Rectangle-1-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: 1366px 650px; }
+  background-size: 100% 650px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
       background-image: url("../img/Rectangle-1-desktop@2x.jpg");
-      background-size: 1366px 650px; } }
-
-.page-header__logo:hover,
-.page-header__logo :focus {
-  opacity: 0.5; }
-
-.page-header__logo:active {
-  opacity: 0.2; }
+      background-size: 100% 650px; } }
 
 .page-header__nav {
   margin: 0;
@@ -111,8 +93,13 @@ img {
 .page-header__nav a {
   color: #f9fbfd;
   text-decoration: none; }
-  .page-header__nav a:hover {
-    color: #8f8f8f; }
+
+.page-header__nav a:hover,
+.page-header__nav a:focus {
+  color: #8f8f8f; }
+
+.page-header__nav a:active {
+  opacity: 0.5; }
 
 .page-header__nav ul {
   display: -webkit-box;
@@ -136,19 +123,29 @@ img {
   font-size: 16px;
   line-height: 20px;
   list-style: none; }
-  .page-header__nav li:hover,
-  .page-header__nav li :focus {
-    color: #8f8f8f; }
-  .page-header__nav li:active {
-    opacity: 0.5; }
 
 .page-header__toggle {
   display: none; }
 
+.page-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1366px;
+  min-height: 108px;
+  margin: 0 auto;
+  padding: 0 7.6%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 @media (max-width: 1023px) {
   .page-header {
-    min-height: 80px;
-    padding: 0 45px;
     background-image: url("../img/Rectangle-1-tablet.png");
     background-size: 100% 638px; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -163,13 +160,13 @@ img {
   .page-header__nav li {
     margin-left: 24px;
     font-size: 14px;
-    line-height: 17px; } }
+    line-height: 17px; }
+  .page-header__wrapper {
+    min-height: 80px;
+    padding: 0 45px; } }
 
 @media (max-width: 767px) {
   .page-header {
-    display: block;
-    min-height: 0;
-    padding: 0 4.7%;
     background-color: #f9fbfd;
     background-image: none; }
   .page-header__close {
@@ -178,14 +175,10 @@ img {
     background-size: 100% 500px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header__close {
-      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-image: url("../img/Rectangle-1-mobile@2x.jpg");
       background-size: 100% 500px; } }
 
 @media (max-width: 767px) {
-  .page-header__path {
-    fill: #011c40; }
-  .page-header__logo-close {
-    fill: #f9fbfd; }
   .page-header__nav a {
     color: #011c40; }
     .page-header__nav a:hover {
@@ -230,7 +223,7 @@ img {
     background-color: #002e65;
     background-image: url("../img/icon-open.svg");
     background-size: 24px 12px; }
-  .page-header__wrapper {
+  .page-header__header-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -242,8 +235,12 @@ img {
             align-items: center;
     width: 100%;
     height: 62px; }
-  .page-header__wrapper--hidden {
-    display: none; } }
+  .page-header__header-wrapper--hidden {
+    display: none; }
+  .page-header__wrapper {
+    display: block;
+    min-height: 0;
+    padding: 0 4.7%; } }
 
 /* Главная страница */
 .home-page {
@@ -252,7 +249,8 @@ img {
   margin-bottom: 116px;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  border: none; }
 
 .home-page__image img {
   width: 560px;
@@ -280,9 +278,9 @@ img {
 .home-page__title {
   width: 100%;
   height: 542px;
+  margin: 0;
   margin-bottom: 120px;
   padding-top: 162px;
-  padding-left: 198px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #f9fbfd;
@@ -290,15 +288,16 @@ img {
   background-image: url("../img/Rectangle-1-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 0 -108px;
-  background-size: 1366px 650px; }
+  background-size: 100% 650px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .home-page__title {
       background-image: url("../img/Rectangle-1-desktop@2x.jpg");
-      background-size: 1366px 650px; } }
+      background-size: 100% 650px; } }
 
 .home-page__title h1 {
   margin: 0;
   margin-bottom: 12px;
+  margin-left: 198px;
   padding: 0;
   font-size: 54px;
   font-weight: 700;
@@ -306,8 +305,14 @@ img {
 
 .home-page__title p {
   margin: 0;
+  margin-left: 198px;
   font-size: 20px;
   line-height: 24px; }
+
+.home-page__title-wrapper {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 0; }
 
 .home-page__travel {
   display: -webkit-box;
@@ -321,11 +326,6 @@ img {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-
-.home-page__wrapper {
-  width: 700px;
-  margin: 0;
-  padding: 0; }
 
 @media (max-width: 1023px) {
   .home-page {
@@ -371,16 +371,17 @@ img {
     font-size: 50px;
     line-height: 61px; }
   .home-page__title p {
+    margin-left: 0;
     font-size: 18px;
     line-height: 22px; }
+  .home-page__title-wrapper {
+    width: 678px;
+    margin: 0 auto; }
   .home-page__travel {
     max-width: 100%;
     width: 100%;
     margin: 0;
-    padding: 0 45px; }
-  .home-page__wrapper {
-    width: 678px;
-    margin: 0 auto; } }
+    padding: 0 45px; } }
 
 @media (max-width: 767px) {
   .home-page {
@@ -413,7 +414,7 @@ img {
     background-size: 100% 500px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .home-page__title {
-      background-image: url("../img/Rectangle-1-mobile@2x.png");
+      background-image: url("../img/Rectangle-1-mobile@2x.jpg");
       background-size: 100% 500px; } }
 
 @media (max-width: 767px) {
@@ -426,15 +427,15 @@ img {
     width: 70%;
     font-size: 16px;
     line-height: 22px; }
+  .home-page__title-wrapper {
+    width: 290px;
+    margin: 0 auto; }
   .home-page__travel {
     display: block;
     max-width: 100%;
     width: 100%;
     margin: 0;
-    padding: 0 15px; }
-  .home-page__wrapper {
-    width: 290px;
-    margin: 0 auto; } }
+    padding: 0 15px; } }
 
 .advantages {
   width: 100%;
@@ -478,7 +479,6 @@ img {
 .advantages li {
   position: relative;
   width: 360px;
-  min-height: 241px;
   margin-right: 20px;
   margin-bottom: 40px;
   margin-left: 20px;
@@ -540,12 +540,15 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1200px;
+  min-height: 281px;
   margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -623,7 +626,7 @@ img {
     background-size: 100% 997px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .advantages {
-      background-image: url("../img/Rectangle-3-mobile@2x.png");
+      background-image: url("../img/Rectangle-3-mobile@2x.jpg");
       background-size: 100% 997px; } }
 
 @media (max-width: 767px) {
@@ -683,13 +686,16 @@ img {
   font-weight: 600;
   line-height: 21px;
   text-align: center;
+  text-decoration: none;
   color: #011c40;
   background-color: #f9fbfd;
-  text-decoration: none; }
+  opacity: 0; }
 
-.catalog a:hover,
+.catalog a:hover {
+  background-color: #a0c4d9; }
+
 .catalog a:focus {
-  opacity: 0.5; }
+  opacity: 1; }
 
 .catalog a:active {
   opacity: 0.2; }
@@ -724,7 +730,8 @@ img {
 
 .catalog dl {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  opacity: 0; }
 
 .catalog dt {
   margin: 0;
@@ -833,24 +840,24 @@ img {
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  opacity: 0; }
+          align-items: flex-start; }
 
-.catalog li:hover,
-.catalog li:focus {
+.catalog li:hover {
   background-image: none; }
 
-.catalog li:hover .catalog__card,
-.catalog li:focus .catalog__card {
-  min-height: 322px;
+.catalog li:hover .catalog__card {
+  min-height: 322px; }
+
+.catalog li:hover .catalog__card a {
   opacity: 1; }
 
-.catalog li:hover .catalog__item-title-hover,
-.catalog li:focus .catalog__item-title-hover {
+.catalog li:hover .catalog__card dl {
+  opacity: 1; }
+
+.catalog li:hover .catalog__item-title-hover {
   display: block; }
 
-.catalog li:hover .catalog__item-title,
-.catalog li:focus .catalog__item-title {
+.catalog li:hover .catalog__item-title {
   display: none;
   margin-bottom: 13px; }
 
@@ -977,7 +984,7 @@ img {
     background-image: url("../img/Rectangle-31-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__astoria {
-      background-image: url("../img/Rectangle-31-mobile@2x.png");
+      background-image: url("../img/Rectangle-31-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -985,7 +992,7 @@ img {
     background-image: url("../img/Rectangle-11-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__atlantis {
-      background-image: url("../img/Rectangle-11-mobile@2x.png");
+      background-image: url("../img/Rectangle-11-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -993,7 +1000,7 @@ img {
     background-image: url("../img/Rectangle-15-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__aurora {
-      background-image: url("../img/Rectangle-15-mobile@2x.png");
+      background-image: url("../img/Rectangle-15-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1001,7 +1008,7 @@ img {
     background-image: url("../img/Rectangle-31-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__elaine {
-      background-image: url("../img/Rectangle-31-mobile@2x.png");
+      background-image: url("../img/Rectangle-31-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1017,7 +1024,7 @@ img {
     background-image: url("../img/Rectangle-14-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__leonor {
-      background-image: url("../img/Rectangle-14-mobile@2x.png");
+      background-image: url("../img/Rectangle-14-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1025,7 +1032,7 @@ img {
     background-image: url("../img/Rectangle-16-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__minion {
-      background-image: url("../img/Rectangle-16-mobile@2x.png");
+      background-image: url("../img/Rectangle-16-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1033,7 +1040,7 @@ img {
     background-image: url("../img/Rectangle-12-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__odyssey {
-      background-image: url("../img/Rectangle-12-mobile@2x.png");
+      background-image: url("../img/Rectangle-12-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1041,7 +1048,7 @@ img {
     background-image: url("../img/Rectangle-13-mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__olympia {
-      background-image: url("../img/Rectangle-13-mobile@2x.png");
+      background-image: url("../img/Rectangle-13-mobile@2x.jpg");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1102,11 +1109,13 @@ img {
   background-color: #f9fbfd;
   border: none;
   cursor: pointer; }
-  .booking button:hover,
-  .booking button :focus {
-    opacity: 0.5; }
-  .booking button :active {
-    opacity: 0.2; }
+
+.booking button:hover,
+.booking button:focus {
+  opacity: 0.5; }
+
+.booking button:active {
+  opacity: 0.2; }
 
 .booking__checkbox {
   width: 279px;
@@ -1119,9 +1128,17 @@ img {
   position: relative;
   cursor: pointer; }
 
-.booking__checkbox label:hover,
-.booking__checkbox label:focus {
+.booking__checkbox label:hover {
   color: #8f8f8f; }
+
+.booking__checkbox label:hover span {
+  opacity: 0.5; }
+
+.booking__checkbox input:focus + label {
+  opacity: 0.5; }
+
+.booking__checkbox input:active + label {
+  opacity: 0.9; }
 
 .booking__checkbox input + label svg {
   display: none; }
@@ -1140,6 +1157,9 @@ img {
   width: 18px;
   height: 18px;
   background-color: #f9fbfd; }
+
+.booking__checkbox span:hover {
+  opacity: 0.5; }
 
 .booking__description {
   width: 500px;
@@ -1207,12 +1227,17 @@ img {
   color: #011c40;
   background-color: #f9fbfd;
   border: none;
+  border-radius: 0;
   cursor: pointer; }
-  .booking__list input:hover,
-  .booking__list input :focus,
-  .booking__list input :active {
-    padding-left: 14px;
-    border: 2px solid #14943f; }
+
+.booking__list input:hover {
+  padding-left: 14px;
+  border: 2px solid #14943f; }
+
+.booking__list input:focus,
+.booking__list input:active {
+  padding-left: 14px;
+  background-color: #a0c4d9; }
 
 .booking__list input::-webkit-input-placeholder {
   color: #011c40; }
@@ -1309,7 +1334,7 @@ img {
     background-size: 100% 760px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .booking {
-      background-image: url("../img/Rectangle-19-mobile@2x.png");
+      background-image: url("../img/Rectangle-19-mobile@2x.jpg");
       background-size: 100% 760px; } }
 
 @media (max-width: 767px) {
@@ -1376,12 +1401,17 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.contacts__address {
+.contacts__address a {
   position: relative; }
 
-.contacts__address::before {
-  top: 0;
-  left: -28px; }
+.contacts__address a::before {
+  position: absolute;
+  content: url("../img/label.svg");
+  top: -2px;
+  left: -29px;
+  z-index: 1;
+  width: 18px;
+  height: 22px; }
 
 .contacts__details {
   width: 500px;
@@ -1397,6 +1427,20 @@ img {
   line-height: 24px;
   color: #011c40;
   text-decoration: none; }
+
+.contacts__details a:hover,
+.contacts__details a:focus {
+  opacity: 0.6; }
+
+.contacts__details a:active {
+  opacity: 0.9; }
+
+.contacts__details a:hover .contacts__details a::before,
+.contacts__details a:focus .contacts__details a::before {
+  opacity: 0.6; }
+
+.contacts__details p:active .contacts__details a::before {
+  opacity: 0.9; }
 
 .contacts__details h2 {
   width: 500px;
@@ -1429,12 +1473,10 @@ img {
   height: 306px; }
 
 .contacts__image::before {
-  top: 217px;
-  left: 249px; }
-
-.contacts__mark::before {
   position: absolute;
   content: url("../img/label.svg");
+  top: 217px;
+  left: 249px;
   z-index: 1;
   width: 18px;
   height: 22px; }
@@ -1446,14 +1488,14 @@ img {
   padding: 0;
   border: none; }
 
-.contacts__phone {
+.contacts__phone a {
   position: relative; }
 
-.contacts__phone::before {
+.contacts__phone a::before {
   position: absolute;
   content: url("../img/phone.svg");
-  top: 1px;
-  left: -28px;
+  top: -1px;
+  left: -29px;
   z-index: 1;
   width: 18px;
   height: 22px; }
@@ -1472,8 +1514,9 @@ img {
     padding-left: 45px; }
   .contacts__address {
     width: 260px; }
-  .contacts__address::before {
-    top: 4px; }
+  .contacts__address a::before {
+    top: 2px;
+    left: -28px; }
   .contacts__details {
     width: 324px;
     min-height: 335px;
@@ -1498,7 +1541,10 @@ img {
     top: 218px;
     left: 109px; }
   .contacts__map {
-    margin: 0; } }
+    margin: 0; }
+  .contacts__phone a::before {
+    top: -2px;
+    left: -28px; } }
 
 @media (max-width: 767px) {
   .contacts {
@@ -1514,8 +1560,8 @@ img {
     margin-bottom: 65px;
     padding-right: 15px;
     padding-left: 15px; }
-  .contacts__address::before {
-    top: 5px; }
+  .contacts__address a::before {
+    top: 3px; }
   .contacts__details {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -1543,10 +1589,18 @@ img {
     top: 224px;
     left: 112px; }
   .contacts__map {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .contacts__phone a::before {
+    top: -1px; } }
 
 .sprite-svg {
   display: none; }
+
+@media (max-width: 767px) {
+  .sprite-svg__path {
+    fill: #011c40; }
+  .sprite-svg__logo-close {
+    fill: #f9fbfd; } }
 
 /* Подвал сайта */
 .page-footer {
@@ -1558,9 +1612,6 @@ img {
 
 .page-footer__logo {
   margin-right: 40px; }
-  .page-footer__logo:hover,
-  .page-footer__logo :focus {
-    opacity: 0.5; }
 
 .page-footer li {
   list-style: none; }
@@ -1588,16 +1639,18 @@ img {
   font-weight: 400;
   line-height: 20px;
   color: #e3ecf6; }
-  .page-footer__list-nav a:hover {
-    color: #8f8f8f; }
 
 .page-footer__list-nav li {
   margin-top: 20px;
   margin-right: 10px;
   margin-bottom: 20px; }
-  .page-footer__list-nav li:hover,
-  .page-footer__list-nav li :focus {
-    color: #8f8f8f; }
+
+.page-footer__list-nav a:hover,
+.page-footer__list-nav a:focus {
+  color: #8f8f8f; }
+
+.page-footer__list-nav a:active {
+  opacity: 0.5; }
 
 .page-footer__social-list {
   display: -webkit-box;
@@ -1622,9 +1675,13 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px; }
-  .page-footer__social-list li:hover,
-  .page-footer__social-list li :focus {
-    opacity: 0.5; }
+
+.page-footer__social-list a:hover,
+.page-footer__social-list a:focus {
+  opacity: 0.5; }
+
+.page-footer__social-list a:active {
+  opacity: 0.9; }
 
 .page-footer__wrapper {
   display: -webkit-box;
@@ -1638,11 +1695,11 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 1366px;
   min-height: 138px;
-  margin: 0;
+  margin: 0 auto;
   margin-top: auto;
-  padding: 0 7.6%;
+  padding: 0 103px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #f9fbfd; }

@@ -17,43 +17,45 @@
   </head>
   <body>
     <div class="sprite-svg">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close"><path d="M1 1l6.5 6.5M14 14L7.5 7.5m0 0L14 1 1 14" stroke="#011C40" stroke-width="2"></path></symbol><symbol id="icon-logo"><g class="layer"><path class="page-header__path" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.767 2.013L27.403 0l5.585 6.659 2.079-1.704 8.053 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD" fill-rule="evenodd"></path><path class="page-header__path" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD" fill-rule="evenodd"></path><path class="page-header__path" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD" fill-rule="evenodd"></path></g></symbol><symbol id="icon-mark"><path d="M1 2.5L5.286 7 11 1" stroke="#101A56"></path></symbol><symbol id="icon-open"><path d="M0 1h24M0 7h24M0 13h24" stroke="#F9FBFD" stroke-width="2"></path></symbol></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close"><path d="M1 1l6.5 6.5M14 14L7.5 7.5m0 0L14 1 1 14" stroke="#011C40" stroke-width="2"></path></symbol><symbol id="icon-logo"><g class="layer"><g class="layer"><path class="sprite-svg__path" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.767 2.013L27.403 0l5.585 6.659 2.079-1.704 8.053 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD" fill-rule="evenodd"></path><path class="sprite-svg__path" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD" fill-rule="evenodd"></path><path class="sprite-svg__path" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD" fill-rule="evenodd"></path></g></g></symbol><symbol id="icon-mark"><path d="M1 2.5L5.286 7 11 1" stroke="#101A56"></path></symbol><symbol id="icon-open"><path d="M0 1h24M0 7h24M0 13h24" stroke="#F9FBFD" stroke-width="2"></path></symbol></svg>
     </div>
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <a aria-label="Логотип Антарктика">
-            <svg class="page-header__logo-svg" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#icon-logo"></use>
-            </svg>
-          </a>
+        <div class="page-header__header-wrapper">
+          <div class="page-header__logo">
+            <a aria-label="Логотип Антарктика">
+              <svg class="page-header__logo-svg" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="page-header__toggle">
+            <button class="page-header__toggle-close" type="button" aria-label="Открыть или закрыть меню"></button>
+          </div>
         </div>
-        <div class="page-header__toggle">
-          <button class="page-header__toggle-close" type="button" aria-label="Открыть или закрыть меню"></button>
-        </div>
+        <nav class="page-header__nav">
+          <ul>
+            <li>
+              <a href="#advantages">Преимущества</a>
+            </li>
+            <li>
+              <a href="#directions">Направления</a>
+            </li>
+            <li>
+              <a href="#next-cruises">Ближайшие круизы</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="page-header__nav">
-        <ul>
-          <li>
-            <a href="#advantages">Преимущества</a>
-          </li>
-          <li>
-            <a href="#directions">Направления</a>
-          </li>
-          <li>
-            <a href="#next-cruises">Ближайшие круизы</a>
-          </li>
-          <li>
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <section class="page-main__home-page home-page" id="directions">
         <div class="home-page__title">
-          <div class="home-page__wrapper">
+          <div class="home-page__title-wrapper">
             <h1>Круизы в&nbsp;Антарктику</h1>
             <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
@@ -251,7 +253,7 @@
           <ul class="booking__list">
             <li>
               <label class="visually-hidden" for="name">Ввести имя</label>
-              <input type="text" name="name" id="name" placeholder="Валерия" minlength="5" maxlength="12" required="">
+              <input type="text" name="name" id="name" placeholder="Валерия" required="">
             </li>
             <li>
               <label class="visually-hidden" for="phone">Ввести номер телефона</label>
@@ -263,7 +265,7 @@
             </li>
           </ul>
           <div class="booking__checkbox">
-            <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked="">
+            <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked="" required="">
             <label for="checkbox">
               <span>
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +280,7 @@
       </section>
       <section class="page-main__contacts contacts" id="contacts">
         <div class="contacts__map">
-          <div class="contacts__image contacts__mark">
+          <div class="contacts__image">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/Rectangle-26-mobile.webp 1x, img/webp/Rectangle-26-mobile@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/webp/Rectangle-26-tablet.webp 1x, img/webp/Rectangle-26-tablet@2x.webp 2x">
@@ -296,7 +298,7 @@
         </div>
         <div class="contacts__details">
           <h2>У вас ещё остались вопросы или сомнения? Приезжайте к нам в&nbsp;офис и мы вам все расскажем.</h2>
-          <p class="contacts__address contacts__mark">
+          <p class="contacts__address">
             <a href="#">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</a>
           </p>
           <p class="contacts__phone">
