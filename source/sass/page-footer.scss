@@ -83,11 +83,11 @@
   align-items: center;
   flex-wrap: wrap;
 
-  width: 1366px;
+  max-width: 1366px;
   min-height: 138px;
   margin: 0 auto;
   margin-top: auto;
-  padding: 0 103px;
+  padding: 0 7.6%;
   box-sizing: border-box;
 
   color: $text-light-color;
@@ -137,6 +137,7 @@
 
   .page-footer__wrapper {
     width: 768px;
+    max-width: none;
     min-height: 120px;
     margin: 0 auto;
     padding: 0 45px;

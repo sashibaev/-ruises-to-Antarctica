@@ -40,7 +40,7 @@ window.main = (function () {
   }
 
   if (mainNav) {
-    mainNav.classList.add('page-header__header-wrapper--hidden');
+    mainNav.classList.add('page-header__nav--hidden');
   }
 
   if (menu) {
@@ -58,7 +58,7 @@ window.main = (function () {
   button.addEventListener('click', function () {
     button.classList.toggle('page-header__toggle-close');
     button.classList.toggle('page-header__toggle-open');
-    mainNav.classList.toggle('page-header__header-wrapper--hidden');
+    mainNav.classList.toggle('page-header__nav--hidden');
     menu.classList.toggle('page-header__close');
     numbersFillSvg.forEach(toChangeFill);
   });
