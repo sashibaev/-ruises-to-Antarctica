@@ -411,8 +411,7 @@ img {
     background-size: 100% 500px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .home-page__title {
-      background-image: url("../img/Rectangle-1-mobile@2x.jpg");
-      background-size: 100% 500px; } }
+      background-image: url("../img/Rectangle-1-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
   .home-page__title h1 {
