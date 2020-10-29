@@ -120,11 +120,11 @@
 
   .page-header__close {
     background-color: $background-nav-color;
-    background-image: url("../img/Rectangle-1-mobile.jpg");
+    background-image: url("../img/Rectangle-1-mobile.webp");
     background-size: 100% 500px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-1-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-1-mobile@2x.webp");
     }
   }
 

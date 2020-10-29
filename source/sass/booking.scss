@@ -299,11 +299,11 @@
     margin-bottom: 59px;
     padding-top: 60px;
 
-    background-image: url("../img/Rectangle-19-mobile.jpg");
+    background-image: url("../img/Rectangle-19-mobile.webp");
     background-size: 100% 760px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-19-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-19-mobile@2x.webp");
       background-size: 100% 760px;
     }
   }

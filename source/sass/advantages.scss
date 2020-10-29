@@ -247,11 +247,11 @@
     min-height: 997px;
     padding-top: 37px;
 
-    background-image: url("../img/Rectangle-3-mobile.jpg");
+    background-image: url("../img/Rectangle-3-mobile.webp");
     background-size: 100% 997px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-3-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-3-mobile@2x.webp");
       background-size: 100% 997px;
     }
   }

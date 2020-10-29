@@ -214,12 +214,12 @@
     margin-bottom: 57px;
     padding-top: 114px;
 
-    background-image: url("../img/Rectangle-1-mobile.jpg");
+    background-image: url("../img/Rectangle-1-mobile.webp");
     background-position: 0 -62px;
     background-size: 100% 500px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/Rectangle-1-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-1-mobile@2x.webp");
     }
   }
 

@@ -177,11 +177,11 @@ img {
     background-image: none; }
   .page-header__close {
     background-color: #3373b0;
-    background-image: url("../img/Rectangle-1-mobile.jpg");
+    background-image: url("../img/Rectangle-1-mobile.webp");
     background-size: 100% 500px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header__close {
-      background-image: url("../img/Rectangle-1-mobile@2x.jpg"); } }
+      background-image: url("../img/Rectangle-1-mobile@2x.webp"); } }
 
 @media (max-width: 767px) {
   .page-header__logo-svg {
@@ -425,12 +425,12 @@ img {
     height: 438px;
     margin-bottom: 57px;
     padding-top: 114px;
-    background-image: url("../img/Rectangle-1-mobile.jpg");
+    background-image: url("../img/Rectangle-1-mobile.webp");
     background-position: 0 -62px;
     background-size: 100% 500px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .home-page__title {
-      background-image: url("../img/Rectangle-1-mobile@2x.jpg"); } }
+      background-image: url("../img/Rectangle-1-mobile@2x.webp"); } }
 
 @media (max-width: 767px) {
   .home-page__title h1 {
@@ -640,11 +640,11 @@ img {
   .advantages {
     min-height: 997px;
     padding-top: 37px;
-    background-image: url("../img/Rectangle-3-mobile.jpg");
+    background-image: url("../img/Rectangle-3-mobile.webp");
     background-size: 100% 997px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .advantages {
-      background-image: url("../img/Rectangle-3-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-3-mobile@2x.webp");
       background-size: 100% 997px; } }
 
 @media (max-width: 767px) {
@@ -977,34 +977,34 @@ img {
   .catalog .catalog__item-title-hover {
     margin-bottom: 13px; }
   .catalog__leonor {
-    background-image: url("../img/Rectangle-14-tablet.jpg"); } }
+    background-image: url("../img/Rectangle-14-tablet.webp"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .catalog__leonor {
-      background-image: url("../img/Rectangle-14-tablet@2x.jpg");
+      background-image: url("../img/Rectangle-14-tablet@2x.webp");
       background-size: 309px 100%; } }
 
 @media (max-width: 1023px) {
   .catalog__minion {
-    background-image: url("../img/Rectangle-16-tablet.jpg"); } }
+    background-image: url("../img/Rectangle-16-tablet.webp"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .catalog__minion {
-      background-image: url("../img/Rectangle-16-tablet@2x.jpg");
+      background-image: url("../img/Rectangle-16-tablet@2x.webp");
       background-size: 309px 100%; } }
 
 @media (max-width: 1023px) {
   .catalog__odyssey {
-    background-image: url("../img/Rectangle-12-tablet.jpg"); } }
+    background-image: url("../img/Rectangle-12-tablet.webp"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .catalog__odyssey {
-      background-image: url("../img/Rectangle-12-tablet@2x.jpg");
+      background-image: url("../img/Rectangle-12-tablet@2x.webp");
       background-size: 309px 100%; } }
 
 @media (max-width: 1023px) {
   .catalog__olympia {
-    background-image: url("../img/Rectangle-13-tablet.jpg"); } }
+    background-image: url("../img/Rectangle-13-tablet.webp"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .catalog__olympia {
-      background-image: url("../img/Rectangle-13-tablet@2x.jpg");
+      background-image: url("../img/Rectangle-13-tablet@2x.webp");
       background-size: 309px 100%; } }
 
 @media (max-width: 1023px) {
@@ -1027,34 +1027,34 @@ img {
   .catalog a {
     width: 220px; }
   .catalog__astoria {
-    background-image: url("../img/Rectangle-31-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-31-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__astoria {
-      background-image: url("../img/Rectangle-31-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-31-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
   .catalog__atlantis {
-    background-image: url("../img/Rectangle-11-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-11-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__atlantis {
-      background-image: url("../img/Rectangle-11-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-11-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
   .catalog__aurora {
-    background-image: url("../img/Rectangle-15-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-15-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__aurora {
-      background-image: url("../img/Rectangle-15-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-15-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
   .catalog__elaine {
-    background-image: url("../img/Rectangle-31-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-31-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__elaine {
-      background-image: url("../img/Rectangle-31-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-31-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1067,34 +1067,34 @@ img {
   .catalog .catalog__item-title-hover {
     margin-bottom: 13px; }
   .catalog__leonor {
-    background-image: url("../img/Rectangle-14-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-14-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__leonor {
-      background-image: url("../img/Rectangle-14-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-14-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
   .catalog__minion {
-    background-image: url("../img/Rectangle-16-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-16-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__minion {
-      background-image: url("../img/Rectangle-16-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-16-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
   .catalog__odyssey {
-    background-image: url("../img/Rectangle-12-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-12-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__odyssey {
-      background-image: url("../img/Rectangle-12-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-12-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
   .catalog__olympia {
-    background-image: url("../img/Rectangle-13-mobile.jpg"); } }
+    background-image: url("../img/Rectangle-13-mobile.webp"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .catalog__olympia {
-      background-image: url("../img/Rectangle-13-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-13-mobile@2x.webp");
       background-size: 270px 100%; } }
 
 @media (max-width: 767px) {
@@ -1376,11 +1376,11 @@ img {
     min-height: 760px;
     margin-bottom: 59px;
     padding-top: 60px;
-    background-image: url("../img/Rectangle-19-mobile.jpg");
+    background-image: url("../img/Rectangle-19-mobile.webp");
     background-size: 100% 760px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .booking {
-      background-image: url("../img/Rectangle-19-mobile@2x.jpg");
+      background-image: url("../img/Rectangle-19-mobile@2x.webp");
       background-size: 100% 760px; } }
 
 @media (max-width: 767px) {
