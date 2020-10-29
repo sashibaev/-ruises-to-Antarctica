@@ -33,16 +33,15 @@
   opacity: 0;
 }
 
-.catalog a:hover {
-  background-color: $background-focus-color;
-}
-
+.catalog a:hover,
 .catalog a:focus {
+  background-color: $background-focus-color;
+
   opacity: 1;
 }
 
 .catalog a:active {
-  opacity: 0.2;
+  background-color: $background-active-color;
 }
 
 .catalog__astoria {
@@ -213,8 +212,16 @@
   background-image: none;
 }
 
+.catalog li:focus-within {
+  background-image: none;
+}
+
 .catalog li:hover .catalog__card,
 .catalog li:focus .catalog__card {
+  min-height: 322px;
+}
+
+.catalog li:focus-within .catalog__card {
   min-height: 322px;
 }
 
@@ -223,8 +230,16 @@
   opacity: 1;
 }
 
+.catalog li:focus-within .catalog__card a {
+  opacity: 1;
+}
+
 .catalog li:hover .catalog__card dl,
 .catalog li:focus .catalog__card dl {
+  display: block;
+}
+
+.catalog li:focus-within .catalog__card dl {
   display: block;
 }
 
@@ -233,8 +248,17 @@
   display: block;
 }
 
+.catalog li:focus-within .catalog__item-title-hover {
+  display: block;
+}
+
 .catalog li:hover .catalog__item-title,
 .catalog li:focus .catalog__item-title {
+  display: none;
+  margin-bottom: 13px;
+}
+
+.catalog li:focus-within .catalog__item-title {
   display: none;
   margin-bottom: 13px;
 }
