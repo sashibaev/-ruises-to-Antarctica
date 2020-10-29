@@ -14,6 +14,13 @@
   }
 }
 
+.page-header__logo svg {
+  width: 70px;
+  height: 38px;
+
+  fill: $menu-logo-fill;
+}
+
 .page-header__nav {
   margin: 0;
   padding: 0;
@@ -119,6 +126,10 @@
     }
   }
 
+  .page-header__logo .page-header__logo-svg-close {
+    fill: $menu-svg-fill;
+  }
+
   .page-header__nav--hidden {
     display: none;
   }
@@ -178,7 +189,7 @@
     width: 13px;
     height: 13px;
 
-    background-color: $background-light-color;
+    background-color: $background-main-color;
     background-image: url("../img/icon-close.svg");
     background-size: 13px 13px;
   }

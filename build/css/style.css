@@ -84,6 +84,11 @@ img {
     .page-header {
       background-image: url("../img/Rectangle-1-desktop@2x.jpg"); } }
 
+.page-header__logo svg {
+  width: 70px;
+  height: 38px;
+  fill: #f9fbfd; }
+
 .page-header__nav {
   margin: 0;
   padding: 0; }
@@ -177,6 +182,8 @@ img {
       background-image: url("../img/Rectangle-1-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
+  .page-header__logo .page-header__logo-svg-close {
+    fill: #011c40; }
   .page-header__nav--hidden {
     display: none; }
   .page-header__nav a {
@@ -214,7 +221,7 @@ img {
   .page-header__toggle-close {
     width: 13px;
     height: 13px;
-    background-color: #e3ecf6;
+    background-color: #f9fbfd;
     background-image: url("../img/icon-close.svg");
     background-size: 13px 13px; }
   .page-header__toggle-open {
@@ -729,9 +736,10 @@ img {
   color: #d8d8d9; }
 
 .catalog dl {
+  display: none;
+  width: 210px;
   margin: 0;
-  padding: 0;
-  opacity: 0; }
+  padding: 0; }
 
 .catalog dt {
   margin: 0;
@@ -762,6 +770,7 @@ img {
   color: #f9fbfd; }
 
 .catalog .catalog__item-title {
+  margin-top: 268px;
   margin-left: 5px;
   color: #f9fbfd; }
 
@@ -840,24 +849,31 @@ img {
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  width: 100%; }
 
-.catalog li:hover {
+.catalog li:hover,
+.catalog li:focus {
   background-image: none; }
 
-.catalog li:hover .catalog__card {
+.catalog li:hover .catalog__card,
+.catalog li:focus .catalog__card {
   min-height: 322px; }
 
-.catalog li:hover .catalog__card a {
+.catalog li:hover .catalog__card a,
+.catalog li:focus .catalog__card a {
   opacity: 1; }
 
-.catalog li:hover .catalog__card dl {
-  opacity: 1; }
-
-.catalog li:hover .catalog__item-title-hover {
+.catalog li:hover .catalog__card dl,
+.catalog li:focus .catalog__card dl {
   display: block; }
 
-.catalog li:hover .catalog__item-title {
+.catalog li:hover .catalog__item-title-hover,
+.catalog li:focus .catalog__item-title-hover {
+  display: block; }
+
+.catalog li:hover .catalog__item-title,
+.catalog li:focus .catalog__item-title {
   display: none;
   margin-bottom: 13px; }
 

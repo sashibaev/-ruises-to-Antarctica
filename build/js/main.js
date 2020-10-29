@@ -7,7 +7,7 @@ window.main = (function () {
   var menu = document.querySelector('.page-header');
   var button = menu.querySelector('.page-header__toggle-close');
   var mainNav = menu.querySelector('.page-header__nav');
-  var numbersFillSvg = document.querySelectorAll('.sprite-svg__path');
+  var fillSvg = document.querySelector('.page-header__logo-svg');
   var form = document.querySelector('.booking__form');
   var phoneForm = form.querySelector('#phone');
 
@@ -25,17 +25,7 @@ window.main = (function () {
     });
   };
 
-  var addFill = function (item) {
-    item.classList.add('sprite-svg__logo-close');
-  };
-
-  var toChangeFill = function (item) {
-    item.classList.toggle('sprite-svg__logo-close');
-
-  };
-
   if (button) {
-    button.classList.remove('page-header__toggle-close');
     button.classList.add('page-header__toggle-open');
   }
 
@@ -47,8 +37,8 @@ window.main = (function () {
     menu.classList.add('page-header__close');
   }
 
-  if (numbersFillSvg) {
-    numbersFillSvg.forEach(addFill);
+  if (fillSvg) {
+    fillSvg.classList.remove('page-header__logo-svg-close');
   }
 
   if (phoneForm) {
@@ -56,10 +46,9 @@ window.main = (function () {
   }
 
   button.addEventListener('click', function () {
-    button.classList.toggle('page-header__toggle-close');
     button.classList.toggle('page-header__toggle-open');
     mainNav.classList.toggle('page-header__nav--hidden');
     menu.classList.toggle('page-header__close');
-    numbersFillSvg.forEach(toChangeFill);
+    fillSvg.classList.toggle('page-header__logo-svg-close');
   });
 })();
