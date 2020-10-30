@@ -86,10 +86,8 @@ img {
 
 .page-header__logo-svg {
   width: 70px;
-  height: 38px; }
-
-.page-header__logo-menu {
-  display: none; }
+  height: 38px;
+  fill: #f9fbfd; }
 
 .page-header__nav {
   margin: 0;
@@ -185,17 +183,11 @@ img {
 
 @media (max-width: 767px) {
   .page-header__logo-svg {
-    display: none;
     width: 42px;
-    height: 22px; }
-  .page-header__logo-svg-open {
-    display: block; }
-  .page-header__logo-menu {
-    display: block;
-    width: 42px;
-    height: 22px; }
-  .page-header__logo-menu-close {
-    display: none; }
+    height: 22px;
+    fill: #011c40; }
+  .page-header__logo-close {
+    fill: #f9fbfd; }
   .page-header__nav--hidden {
     display: none; }
   .page-header__nav a {

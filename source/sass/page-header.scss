@@ -17,10 +17,8 @@
 .page-header__logo-svg {
   width: 70px;
   height: 38px;
-}
 
-.page-header__logo-menu {
-  display: none;
+  fill: $menu-logo-fill;
 }
 
 .page-header__nav {
@@ -129,25 +127,14 @@
   }
 
   .page-header__logo-svg {
-    display: none;
-
     width: 42px;
     height: 22px;
+
+    fill: $menu-svg-fill;
   }
 
-  .page-header__logo-svg-open {
-    display: block;
-  }
-
-  .page-header__logo-menu {
-    display: block;
-
-    width: 42px;
-    height: 22px;
-  }
-
-  .page-header__logo-menu-close {
-    display: none;
+  .page-header__logo-close {
+    fill: $menu-logo-fill;
   }
 
   .page-header__nav--hidden {
